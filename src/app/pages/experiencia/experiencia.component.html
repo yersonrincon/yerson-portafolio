@@ -1,0 +1,16 @@
+
+<div class="container"  [@bannerTrigger]>
+  <div class="row">
+    <div class="col-md-12" >
+  <mat-grid-list [cols]="mybreakpoint"  (window:resize)="handleSize($event)" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let icono of iconos" >        
+{{icono.title}}    
+     <img [src]="icono.src"> </mat-grid-tile >
+
+    
+  </mat-grid-list>
+  
+    </div>
+</div>
+</div>
+<!-- https://drive.google.com/file/d/1Lldvlb0Soy3g9VfyE-gl4X9HkNZc-eIe/view?usp=share_link -->a

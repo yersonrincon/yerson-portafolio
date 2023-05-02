@@ -1,0 +1,29 @@
+
+   .mat-icon {
+        font-size: 40px;
+        width: 70px;
+        height: 40px;
+        margin: 0px;
+    }
+ 
+    mat-list-item {
+        color: #000000 !important;
+        font-size: 0.8rem;
+        height: 44px !important;
+        margin-bottom: 4px;
+        
+        &:hover {
+            color: #f2f5f7 !important;
+        }
+         ::ng-deep {
+            .mat-list-item-content {
+                border-radius: 5px;
+                margin: 0 8px;
+                &:hover {
+                    background: #2c3344 !important;
+                }
+            }
+        }
+    }
+    
+    

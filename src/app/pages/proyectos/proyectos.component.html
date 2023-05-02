@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="title2 text-center animate__animated  animate__animated animate__pulse">Proyectos Personales</h2>
+      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="4px grid">
+        <mat-card *ngFor="let member of members" flex="calc(33%-25px)" min-height="calc(33%-25px)">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="text-center  animate__animated animate__pulse ">{{member.title}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="col-md-12 animate__animated animate__flipInX">
+            <swiper-container class="" pagination-dynamic-bullets="true" effect="cards" grab-cursor="true">
+              <swiper-slide>
+                <img mat-card-image [src]="member.src" alt="Photo of {{member.title}}">
+              </swiper-slide>
+              <swiper-slide>Slide 2</swiper-slide>
+            </swiper-container>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

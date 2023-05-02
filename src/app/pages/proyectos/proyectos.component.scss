@@ -1,0 +1,50 @@
+
+swiper-container {
+  padding: 2.5em;
+  width: 397px;
+  height: 440px;
+  
+}
+
+swiper-slide {
+  
+  border-radius: 18px;
+  border-color: rgb(231, 14, 14);
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+swiper-slide:nth-child(2n) {
+  background-color: #fafafa;
+  
+}
+
+swiper-slide img {
+  display: block;
+  width: 98%;
+  height: 98%;
+  border-radius: 18px;
+
+}
+
+
+
+
+
+.card-title2{
+  margin-right: 10px;
+  text-align: center;
+  font-weight: normal;
+  color:rgb(0, 255, 178) ;
+  font-size: 50px;
+  position: relative;
+  bottom: 4px;
+  font-weight: 600;
+}
+
+
+
+
+
+

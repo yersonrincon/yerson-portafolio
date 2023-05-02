@@ -1,0 +1,33 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.user {
+    font-size: 14px;
+}
+
+mat-toolbar {
+    background-color: transparent;
+    position: fixed;
+}
+
+mat-toolbar-row{
+    background-color: transparent;
+}
+.mat-icon {
+    width: 75px;
+    height: 75px;
+    padding: 25px;
+    margin-left:-12px ;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #84ff00  
+}
+
