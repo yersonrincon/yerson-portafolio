@@ -1,15 +1,15 @@
-
-<div class="container"  [@bannerTrigger]>
+<div class="container">
   <div class="row">
-    <div class="col-md-12" >
-  <mat-grid-list [cols]="mybreakpoint"  (window:resize)="handleSize($event)" rowHeight="2:1">
-    <mat-grid-tile *ngFor="let icono of iconos" >        
-{{icono.title}}    
-     <img [src]="icono.src"> </mat-grid-tile >
+    <div class="col-md-12">
+      <h2 class="title1 text-center animate__animated  animate__animated animate__pulse">Experiencia en:</h2>
+      <mat-grid-list   [cols]="mybreakpoint" (window:resize)="handleSize($event)" rowHeight="2:1">
+        <mat-grid-tile  *ngFor="let icono of iconos">         
 
-    
-  </mat-grid-list>
+          <img [src]="icono.src">
   
+         </mat-grid-tile>
+      
+      </mat-grid-list>
     </div>
-</div>
-</div>
+    </div>
+  </div>

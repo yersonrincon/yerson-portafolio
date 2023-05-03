@@ -7,20 +7,21 @@ swiper-container {
 }
 
 
+
 swiper-slide {
-  
   border-radius: 18px;
-  border-color: rgb(231, 14, 14);
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
 }
 
 swiper-slide:nth-child(2n) {
   background-color: #fafafa;
   
 }
+.cart-description{
+  font-size: 23px;
+  color: #000000;
+  padding: 1.5rem;
 
+}
 swiper-slide img {
   display: block;
   width: 198%;
