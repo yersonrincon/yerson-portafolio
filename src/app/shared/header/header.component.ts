@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  titulos: {title: string, }[] = [
-    {title: 'proyectos personales'}
-  ];
+ 
   @Output() toggleSidebarForMe: EventEmitter<any> = new EventEmitter();
 
   constructor(private router: Router) {}

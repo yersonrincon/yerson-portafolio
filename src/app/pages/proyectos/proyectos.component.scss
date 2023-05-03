@@ -6,6 +6,7 @@ swiper-container {
   
 }
 
+
 swiper-slide {
   
   border-radius: 18px;
@@ -22,12 +23,19 @@ swiper-slide:nth-child(2n) {
 
 swiper-slide img {
   display: block;
-  width: 98%;
-  height: 98%;
+  width: 198%;
+  height: 100%;
   border-radius: 18px;
 
 }
 
+
+
+.mat-mdc-card-header {
+  display: block;
+  padding: 16px 16px 0;
+  font-size: 38px;
+}
 
 
 
@@ -44,7 +52,11 @@ swiper-slide img {
 }
 
 
-
+.tituloproyecto{
+  text-align: center;
+  font-weight: 800;
+  color:rgb(255, 255, 255) ;
+}
 
 
 
