@@ -20,7 +20,10 @@ export class ExperienciaComponent  implements OnInit {
     { title:'visual',src:'..//..//../assets/iconos/node.png'},
     { title:'visual',src:'..//..//../assets/iconos/angular.png'},
     { title:'visual',src:'..//..//../assets/iconos/js.png'},
-    { title:'visual',src:'..//..//../assets/iconos/api.png'}
+    { title:'visual',src:'..//..//../assets/iconos/api.png'},
+    { title:'visual',src:'..//..//../assets/iconos/express.png'},
+    { title:'visual',src:'..//..//../assets/iconos/git.png'},
+    { title:'visual',src:'..//..//../assets/iconos/mongo.png'}
   ]
  constructor(){
  }
