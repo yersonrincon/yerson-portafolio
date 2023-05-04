@@ -23,16 +23,19 @@ export class ExperienciaComponent  implements OnInit {
     { title:'visual',src:'..//..//../assets/iconos/api.png'},
     { title:'visual',src:'..//..//../assets/iconos/express.png'},
     { title:'visual',src:'..//..//../assets/iconos/git.png'},
+    { title:'visual',src:'..//..//../assets/iconos/mongo.png'},
+    { title:'visual',src:'..//..//../assets/iconos/mongo.png'},
+    { title:'visual',src:'..//..//../assets/iconos/mongo.png'},
     { title:'visual',src:'..//..//../assets/iconos/mongo.png'}
   ]
  constructor(){
  }
 
    ngOnInit(): void {
-    this.mybreakpoint = (window.innerWidth <= 700) ? 2 : 5;
+    this.mybreakpoint = (window.innerWidth <= 700) ? 2 : 6;
    }
    handleSize(event:any) {
-    this.mybreakpoint = (event.target.innerWidth <= 700) ? 2 : 5;
+    this.mybreakpoint = (event.target.innerWidth <= 700) ? 2 : 6;
     }
 
   }

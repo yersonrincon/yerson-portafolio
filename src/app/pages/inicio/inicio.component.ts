@@ -28,7 +28,7 @@ export class InicioComponent implements OnInit {
       enable: true
     },
     background: {
-      color: "#010110"
+      color: "#030310" 
     },
     interactivity: {
       detect_on: "canvas",
