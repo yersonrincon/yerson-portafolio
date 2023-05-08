@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
+
 @NgModule({
   declarations: [ PerfilComponent],
   imports: [
@@ -19,9 +20,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MatButtonToggleModule,
     PdfViewerModule,
     MatIconModule,
-
  
-    
   ]
 })
 export class PerfilModule { }

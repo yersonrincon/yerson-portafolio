@@ -15,6 +15,7 @@ import { NgParticlesModule } from "ng-particles";
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 
+
 @NgModule({
   declarations: [InicioComponent],
   imports: [
@@ -30,7 +31,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatDividerModule,
     MatListModule,
     NgParticlesModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+   
   ]
 })
 export class InicioModule { }

@@ -1,1 +1,33 @@
-<p>estudios works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="title1 text-center animate__animated  animate__animated animate__pulse">Mis estudios:</h2>
+            <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="4px grid">
+                <mat-card *ngFor="let member of members" flex="calc(33%-25px)" min-height="calc(33%-25px)">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                    </mat-card-header>
+                    <div class="marge1">
+                        <img mat-card-image [src]="member.src" style="width: 400px;  padding: 1rem;">
+                    </div>
+                    <mat-card-content>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="title1 text-center animate__animated  animate__animated animate__pulse">Experiencia en:</h2>
+            <div class="margen">
+                <mat-grid-list [cols]="mybreakpoint" (window:resize)="handleSize($event)" rowHeight="2:1">
+                    <mat-grid-tile *ngFor="let icono of iconos">
+                        <img [src]="icono.src" style=" width: 100px;  padding: 1rem;">
+                    </mat-grid-tile> 
+                </mat-grid-list>
+            </div>
+        </div>
+    </div>
+</div>

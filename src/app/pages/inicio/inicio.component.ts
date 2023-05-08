@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ISourceOptions } from 'tsparticles';
-import { tsParticles } from "tsparticles-engine";
-import { loadPolygonPath } from "tsparticles-path-polygon";
+
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -9,10 +9,12 @@ import { loadPolygonPath } from "tsparticles-path-polygon";
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+
+  ngOnInit(){
+
   }
+
   sideBarOpen = true;
   
   sideBarToggler() {
@@ -28,7 +30,7 @@ export class InicioComponent implements OnInit {
       enable: true
     },
     background: {
-      color: "#030310" 
+      color: "#010113" 
     },
     interactivity: {
       detect_on: "canvas",

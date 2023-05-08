@@ -10,15 +10,17 @@
         color: #000000 !important;
         font-size: 0.8rem;
         height: 44px !important;
-        margin-bottom: 4px;
+      
         
         &:hover {
             color: #f2f5f7 !important;
+            margin-top: 40px;
         }
          ::ng-deep {
+            margin-top: 40px;
             .mat-list-item-content {
-                border-radius: 5px;
-                margin: 0 8px;
+               
+                margin-top: 40px;
                 &:hover {
                     background: #2c3344 !important;
                 }
@@ -26,4 +28,6 @@
         }
     }
     
-    
+.mat-icon {
+    font-size: 40px;
+}

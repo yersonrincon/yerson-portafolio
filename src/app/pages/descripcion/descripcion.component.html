@@ -1,1 +1,78 @@
-<p>descripcion works!</p>
+<!--<div class="container">
+    <div class="title1 text-center">
+        Mi Perfil:
+    </div>
+    <div class="container">
+    <div class="col-md-12">
+        <table *ngFor="let imagene of imagenes" mat-table class="mat-elevation-z8 demo-table">
+
+            <tr> 
+             
+                <div class="circulo">
+                <th>   <img [src]="imagene.src" (click)="openModal(template)" > </th>
+              
+                </div>
+                <td>{{imagene.descripcion}}</td>
+            </tr>
+            
+        </table>
+    </div>
+    </div>
+</div>-->
+
+<div class="container">
+    <div class="title1 text-center">
+        Mi Perfil:
+    </div>
+    <div class="container">
+        <div class="col-md-6">
+            <table mat-table class="mat-elevation-z8 demo-table">
+                    <tr>
+                        <th> <button class="btn btn-outline-light btn-floating "> <img src="..//..//../assets/iconos/educacion.png" (click)="openModal(template1)"></button> </th>
+                        <td>Yerson Hernandez Rincón</td>
+                    </tr>
+                    <tr>
+                        <th>  <button  class="btn btn-outline-light btn-floating "> <img src="..//..//../assets/iconos/sena.png" (click)="openModal(template1)"> </button></th>
+                        <td>Tecnologo en Analisis y Desarrollo de Sistemas de Información.</td>
+                    </tr>
+                    <tr>
+                        <th> <button class="btn btn-outline-light btn-floating ">  <img src="..//..//../assets/iconos/sena.png" (click)="openModal(template1)"></button> </th>
+                        <td>Bogota DC.</td>
+                    </tr>
+                    <tr>
+                        <th> <button class="btn btn-outline-light btn-floating ">  <img src="..//..//../assets/iconos/sena.png" (click)="openModal(template1)"></button> </th>
+                        <td>Desarrollo Web Empresa CGI.</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<ng-template class="modales" #template1>
+  
+    <div class="modales">
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"(click)="closeVentana()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        This is a sample modal dialog box.
+    </div>
+    <div class="modal-footer">
+       
+    </div>
+    </div>
+  
+</ng-template>
+
+
+
+
+
+		
+<button nbButton status="success" (click)="showSpinner()">Show Spinner</button>  
+
+
+    <ngx-spinner  color = "#00ffb2"type="ball-spin-clockwise-fade"></ngx-spinner>

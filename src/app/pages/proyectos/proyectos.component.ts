@@ -1,8 +1,7 @@
-import { Component, OnInit,ElementRef,Input,ViewChild} from '@angular/core';
-import {FreeMode, SwiperOptions} from "swiper";
+import { Component, OnInit} from '@angular/core';
+
 import {register} from 'swiper/element/bundle';
-import {Swiper } from 'swiper/types';
-import { Autoplay, Pagination, Navigation } from 'swiper';
+
 
 @Component({
   selector: 'app-proyectos',

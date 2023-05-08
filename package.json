@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-   "build": "ng build", 
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@ng-bootstrap/ng-bootstrap": "^14.1.1",
     "@popperjs/core": "^2.11.7",
     "angular-ui-carousel": "^0.1.10",
     "animate.css": "^4.1.1",
@@ -31,6 +32,8 @@
     "material-icons": "^1.13.6",
     "ng-particles": "^2.43.1",
     "ng2-pdf-viewer": "^9.1.5",
+    "ngx-bootstrap": "^10.2.0",
+    "ngx-spinner": "^15.0.1",
     "rxjs": "~7.8.0",
     "swiper": "^9.2.3",
     "tslib": "^2.3.0",

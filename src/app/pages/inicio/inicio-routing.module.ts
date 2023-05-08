@@ -14,9 +14,15 @@ const routes: Routes = [
     {
       path: 'proyectos',loadChildren: () => import('../proyectos/proyectos.module').then(m=> m.ProyectosModule)
     },
+   
     {
-      path: 'experiencia',loadChildren: () => import('../experiencia/experiencia.module').then(m=> m.ExperienciaModule)
+      path: 'estudios',loadChildren:() => import('../estudios/estudios.module').then(m=>m.EstudiosModule)
+    },
+    {
+      path: 'descripcion',loadChildren:()=>import('../descripcion/descripcion.module').then(m=>m.DescripcionModule)
     }
+  
+
   ]
 }
 ];
