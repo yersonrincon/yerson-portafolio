@@ -24,21 +24,15 @@ export class EstudiosComponent {
     { title:'visual',src:'..//..//../assets/iconos/express.png'},
     { title:'visual',src:'..//..//../assets/iconos/git.png'},
     { title:'visual',src:'..//..//../assets/iconos/mongo.png'},
-    { title:'visual',src:'..//..//../assets/iconos/mongo.png'},
-    { title:'visual',src:'..//..//../assets/iconos/mongo.png'},
-    { title:'visual',src:'..//..//../assets/iconos/mongo.png'}
+    { title:'visual',src:'..//..//../assets/iconos/adobe.png'},
+    { title:'visual',src:'..//..//../assets/iconos/html.png'},
+    { title:'visual',src:'..//..//../assets/iconos/postgres.png'}
   ]
 
 members: { src:string }[] = [
-
-  {src: '..//../assets/diplomas/Habilidades.jpg'},
-  {src: '..//../assets/diplomas/Habilidades.jpg'},
-  {src: '..//../assets/diplomas/Habilidades.jpg'},
-
-  //{src: '..//../assets/diplomas/DIPLOMASENA.jpg'},
- 
-  
- 
+  {src: '..//../assets/diplomas/diploma.jpg'},
+  {src: '..//../assets/diplomas/diplomacolegio.jpg'},
+  {src: '..//../assets/diplomas/Habilidades.jpg'}
 ];
 
 

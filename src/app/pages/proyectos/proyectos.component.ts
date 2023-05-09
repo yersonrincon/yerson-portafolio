@@ -16,7 +16,7 @@ export class ProyectosComponent implements OnInit {
     {title: 'Spotyapp', url:'https://github.com/yersonrincon/spoty-app',content: 'Content here',src:'..//../assets/img/Captura4.PNG',
      descripcion: 'Es una aplicación que consume un servicio de Spotify donde nos trae información de lo más escuchado por los usuarios en la app.'},
     {title: 'Adminpro', url:'https://github.com/yersonrincon/adminpro-front', content: 'Content here',src:'..//../assets/img/Captura6.PNG',
-     descripcion: 'Sistema de registro de médicos y hospitales con gráficas de notificaciones  desarrollado en ANGULAR NODE JS y base de datos en MONGODB'},
+     descripcion: 'Sistema de registro de médicos y hospitales con gráficas de notificaciones  desarrollado en ANGULAR NODE JS y base de datos en MONGODB.'},
     {title: 'Tifon',  url:'https://github.com/yersonrincon/tifon-front', content: 'Content here',src:'..//../assets/img/Captura1.PNG',
     descripcion: 'Sistema de contror de ventas para lavaderos de autos nos  muestra en tiempo real las ventas que se an realizado en el dia. '},
     {title: 'Peliculas',  url:'https://github.com/yersonrincon/peliculas-app',content: 'Content here',src:'..//../assets/img/Captura8.PNG',

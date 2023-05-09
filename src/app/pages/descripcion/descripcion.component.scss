@@ -1,25 +1,25 @@
-tbody,  th{
-    font-size:2px;
-    font-weight: 800;
-    color: #cff5f1;
-   
-}
+
 
 tbody,  td{
     font-size: 25px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.h5,h5{
+   
+    margin: 8px;
+    color: #ffffff;
     font-weight: 600;
+    font-size: 18px;
+   
+} 
+.h4,h4{
     color: #cff5f1;
+    font-weight: 800;
+    margin: 10px;
+    font-size: 22px;
 }
 
-.btn {
-    width: 100px;
-    border-radius: 50%;
-    height: 100px;
-    border-color: #00ffb2;
-    background-color:#00ffb2;
-    margin: 7px;
-    
-}
 
 
 img{
@@ -27,9 +27,31 @@ img{
 
 }
    
-.modales  {
-    background-color: #2c2d2d;
+
+.modales   {
+    background-color: #444445;
+    
   
 }
 
+.margen1{
+    border: 6px solid #ceefe5;
+    margin: 2rem;
+    width: 340px;
+    height: 412px;
+}
 
+.modal-title{
+    color: #cff5f1;
+    font-weight: 800;
+    margin: 5px;
+    font-size: 30px
+}
+td[_ngcontent-buj-c52] {
+    font-size: 28px;
+    font-weight: 800;
+    color: #14c2b1;
+}
+.btn{
+    margin-left: 30px;
+}

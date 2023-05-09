@@ -1,8 +1,6 @@
 import { Component, TemplateRef,OnInit } from '@angular/core';
-
-import {FormBuilder,} from '@angular/forms';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
-import { NgxSpinnerService } from "ngx-spinner";
+import * as FileSaver from 'file-saver';
 
 
 @Component({
@@ -14,25 +12,25 @@ export class DescripcionComponent implements OnInit{
   modalRef!: BsModalRef;
   
 
-  constructor( private modalService: BsModalService,private spinner: NgxSpinnerService){
+  constructor( private modalService: BsModalService){
 
   }
 
     
    openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
+    
  }
+ 
  closeVentana(): void {
   this.modalRef.hide();
 }
 
-showSpinner(){
-  this.spinner.show();
-
-  setTimeout(() => {
-    /** spinner ends after 5 seconds */
-    this.spinner.hide();
-  }, 5000);
+downloadPdf() {
+  //const pdfUrl ="https://drive.google.com/file/d/1Lldvlb0Soy3g9VfyE-gl4X9HkNZc-eIe/view?usp=share_link";
+  const pdfUrl = './assets/cv/hojacv.pdf';
+  const pdfName = "yersoncv.pdf";
+  FileSaver.saveAs(pdfUrl, pdfName);
 }
 
 ngOnInit() {
@@ -40,14 +38,7 @@ ngOnInit() {
   
 }
   
-imagenes: { titulo:string,descripcion:string,src:string }[]= [
-  {titulo:'Nombre:',descripcion:'Yerson Hernandez Rincón',src:'..//../assets/iconos/ubicacion.png'},
-  {titulo:'Titulo:',descripcion:'Tecnologo en Analisis y Desarrollo de Sistemas de Información.',src:'..//../assets/iconos/sena.png'},
-  {titulo:'Ubicación:',descripcion:'Bogota DC.',src:'..//../assets/img/Captura.PNG'},
-  {titulo:'Experiencia:',descripcion:'Desarrollo Web Empresa CGI.',src:'..//../assets/img/Captura.PNG'},
-  
-  
-]
+
   
 
 }
