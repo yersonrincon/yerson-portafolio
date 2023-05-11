@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 import {register} from 'swiper/element/bundle';
 
@@ -26,8 +27,18 @@ export class ProyectosComponent implements OnInit {
    
   ];
 
-  constructor() {
-    }
+  constructor(public translateService: TranslateService) {
+    translateService.addLangs(['en', 'es']);
+    translateService.setDefaultLang('es');
+    
+    // Get User Language from Browser
+    const browserLang = translateService.getBrowserLang();
+    translateService.use(browserLang.match(/es|en/) ? browserLang : 'en');
+  }
+
+  switchLanguage(language: string) {
+    this.translateService.use(language);
+  }
   ngOnInit(): void {  
       register();
   }

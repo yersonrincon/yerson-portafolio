@@ -1,0 +1,18 @@
+{
+    "saludo":"Hello my Name Is:",
+    "name":"Yersón Hernández Rincón",
+    "profecion":"Developer: Full Stack",
+    "titleProyectos":"Personal projects",
+    "mission":"My mission is to design and develop websites that meet the needs of clients.",
+    "button1":"Write me",
+    "button2":"My job",
+    "perfil":"My profile:",
+    "perfil1":"Profile:",
+    "descripcion1":"I am a person committed to their objectives and goals, with the ability to work under pressure and the willingness to work as a team.",
+    "descripcion2":"I have knowledge in Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL, Mongo DB, HTML, CSS and Bootstrap.",
+    "name2": "Name: Yersón Hernández Rincón.",
+    "estudios":"Studies: Technologist in Analysis and Development of Information Systems.",
+    "experiencia":"Experience: Web Development CGI Company.",
+    "ubicacion":"Location: Bogota DC.",
+    "button3":"Download CV"
+}  

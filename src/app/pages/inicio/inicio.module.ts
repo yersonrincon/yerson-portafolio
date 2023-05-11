@@ -13,9 +13,16 @@ import { InicioComponent } from './inicio.component';
 import { HeaderModule } from '../../shared/header/header.module';
 import { NgParticlesModule } from "ng-particles";
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { HttpClientModule, HttpClient } from "@angular/common/http";
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
+export function translateHttpLoaderFactory(http: HttpClient) {
 
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 
+}
 @NgModule({
   declarations: [InicioComponent],
   imports: [
@@ -25,14 +32,26 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     FooterModule,
     SidenavModule,
     MatSidenavModule,
+    HttpClientModule,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
     MatListModule,
     NgParticlesModule,
-    FlexLayoutModule,
+    FlexLayoutModule, 
+    TooltipModule,
+
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: translateHttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
+
    
-  ]
+  ],
+  exports:[TranslateModule,HttpClientModule ],
 })
 export class InicioModule { }

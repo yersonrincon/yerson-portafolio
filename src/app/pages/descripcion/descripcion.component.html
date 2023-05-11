@@ -1,47 +1,54 @@
 <div class="container">
     <div class="title1 animate__animated animate__pulse text-center">
-        Mi Perfil:
+       {{"perfil"|translate}}
     </div>
     <div class=" row">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <table mat-table class="mat-elevation-z8 demo-table">
                 <tr>
                     <th>
                         <a role="button">
                             <img src="..//..//../assets/iconos/person.png" (click)="openModal(template1)"
-                                style="width: 90px;margin: 20px;"> </a>
-
+                                style="width: 90px;margin: 20px;">
+                        </a>
                     </th>
-                    <td class="animate__animated animate__pulse">Nombre: Yersón Leonel.</td>
+                    <td class="animate__animated animate__pulse">
+                       {{"name2"|translate}}
+                    </td>
                 </tr>
                 <tr>
                     <th> <a role="button">
-                            <img src="..//..//../assets/iconos/estudios.png" (click)="openModal(template2)"
+                            <img src="..//..//../assets/iconos/gorra.png" (click)="openModal(template2)"
                                 style="width: 90px;margin: 20px;"> </a></th>
-                    <td class="animate__animated animate__pulse"> Estudios: Tecnólogo en Análisis y Desarrollo de Sistemas de Información.</td>
-                </tr>
-                <tr>
-                    <th> <a role="button">
-                            <img src="..//..//../assets/iconos/place.png" (click)="openModal(template3)"
-                                style="width: 90px;margin: 20px;"></a> </th>
-                    <td class="animate__animated animate__pulse">Ubicación: Bogotá DC.</td>
+                    <td class="animate__animated animate__pulse">
+                      {{"estudios"|translate}}</td>
                 </tr>
                 <tr>
                     <th> <a role="button">
                             <img src="..//..//../assets/iconos/experiencia.png" (click)="openModal(template4)"
                                 style="width: 90px;margin: 20px;"></a> </th>
-                    <td class="animate__animated animate__pulse">Experiencia: Desarrollo Web Empresa CGI.</td>
+                    <td class="animate__animated animate__pulse">{{"experiencia"|translate}}</td>
+                </tr>
+                <tr>
+                    <th> <a role="button">
+                            <img src="..//..//../assets/iconos/place.png" (click)="openModal(template3)"
+                                style="width: 90px;margin: 20px;"></a> </th>
+                    <td class="animate__animated animate__pulse">{{"ubicacion"|translate}}.</td>
                 </tr>
             </table>
         </div>
-        <div class="col-md-4">
-            <div class="margen1  animate__animated animate__backInRight">
-                <img src="..//..//../assets/img/yersoncv.jpg" style="width: 329px;height: 400px;">
-            </div>
+        <div class="col-md-5">
             <div class="text-center">
-                <a class="btn btn-outline-light btn btn-outline-success  m-2" style="border-color: #00ffb2;"
+            <div class="margen1  animate__animated animate__backInRight">
+                <img src="..//..//../assets/img/yersoncv.jpg"  class="img-responsive"style="width: 100%;height: 100%; display: block;
+                margin-left: auto;
+                margin-right: auto;">
+            </div>
+            </div>
+            <div class="text-center mt-3" >
+                <a class="btn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;"
                     role="button">
-                    <button mat-button (click)="downloadPdf()"> Descargar CV</button></a>
+                    <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
             </div>
         </div>
     </div>
@@ -50,16 +57,13 @@
         <div class="modales">
 
             <div class="modal-header">
-                <h4 class="modal-title pull-left">Perfil:</h4>
+                <h4 class="modal-title pull-left">{{"perfil1"|translate}}</h4>
                 <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="closeVentana()"></button>
             </div>
-            <div class="modal-body">
-                <h5>Soy una persona comprometida con sus objetivos y metas, con capacidad de 
-                    trabajo bajo presión y la disposición de trabajar en equipo.
-                 </h5>
-                <h5> Cuento con conocimientos en Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL,
-                    Mongo DB, HTML, CSS y Bootstrap. </h5>
-                  
+            <div class="modal-body">  
+                <h5>{{"descripcion1"|translate}} </h5>
+                <h5> {{"descripcion2"|translate}} </h5>
+
             </div>
         </div>
     </ng-template>
@@ -71,8 +75,7 @@
                 <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="closeVentana()"></button>
             </div>
             <div class="modal-body">
-                <h4>Tecnólogo en Análisis y Desarrollo de sistemas de Información:</h4>
-
+                <h4>Tecnólogo en Análisis y Desarrollo de Sistemas de Información:</h4>
                 <h4>Servicio Nacional de Aprendizaje (SENA):</h4>
                 <h5>Fecha Inicio: 2020/10/10 Fecha Final: 2022/10/10</h5>
                 <h4> Curso de Programación:</h4>
@@ -96,8 +99,8 @@
                 <h4>Bogotá(Colombia)</h4>
                 <h5> Calle 64 C BIS # 85 j 65</h5>
                 <h5>Barrio: Álamos</h5>
-                <h5>Correo:yersonhernandez202@gmail.com</h5>
-                <h5>Telofono:3208707335</h5>
+                <h5>Correo: yersonhernandez202@gmail.com</h5>
+                <h5>Telefono: 3208707335 - 3116204093</h5>
             </div>
         </div>
     </ng-template>
@@ -114,9 +117,7 @@
                 <h5> Diseñar el sistema de acuerdo con los requisitos del cliente (Frontend,Backend).</h5>
                 <h5> Construir manuales de usuario de acuerdo al sistema de información</h5>
                 <h5>Brindar soporte a los usuarios gestionado las bases de datos</h5>
-                <h5>Fecha Inico: 2021/9/11 Fecha Final: 2022/10/11</h5>
-
-
+                <h5>Fecha Inico : 2021/9/11 Fecha Final: 2022/10/11</h5>
             </div>
         </div>
     </ng-template>

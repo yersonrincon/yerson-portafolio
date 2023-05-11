@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DescripcionComponent } from './descripcion.component';
 import { DescripcionRoutingModule } from './descripcion-routing.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
-
+import { TranslateModule } from '@ngx-translate/core';
 import {MatButtonModule} from '@angular/material/button';
 
 
@@ -13,7 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     DescripcionRoutingModule,
     NgxSpinnerModule,
-    MatButtonModule
+    MatButtonModule,
+    TranslateModule
    
   ],
 

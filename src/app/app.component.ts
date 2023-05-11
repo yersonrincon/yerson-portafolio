@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslateService,LangChangeEvent } from '@ngx-translate/core';
+
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -8,8 +10,10 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class AppComponent {
   title = 'yerson-portafolio';
-  constructor(private spinner: NgxSpinnerService) {}
+  constructor(private spinner: NgxSpinnerService,) 
+  {
   
+  }
     ngOnInit(){
       this.spinner.show();
   

@@ -1,7 +1,7 @@
 
 
 tbody,  td{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
     color: #ffffff;
 }
@@ -9,15 +9,15 @@ tbody,  td{
    
     margin: 8px;
     color: #ffffff;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 19px;
    
 } 
 .h4,h4{
     color: #cff5f1;
     font-weight: 800;
     margin: 10px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -36,9 +36,12 @@ img{
 
 .margen1{
     border: 6px solid #ceefe5;
-    margin: 2rem;
-    width: 340px;
-    height: 412px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    height: 490px
 }
 
 .modal-title{
@@ -51,7 +54,4 @@ td[_ngcontent-buj-c52] {
     font-size: 28px;
     font-weight: 800;
     color: #14c2b1;
-}
-.btn{
-    margin-left: 30px;
 }

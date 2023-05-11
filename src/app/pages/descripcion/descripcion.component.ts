@@ -1,7 +1,7 @@
 import { Component, TemplateRef,OnInit } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import * as FileSaver from 'file-saver';
-
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-descripcion',
@@ -12,16 +12,24 @@ export class DescripcionComponent implements OnInit{
   modalRef!: BsModalRef;
   
 
-  constructor( private modalService: BsModalService){
-
+  constructor( private modalService: BsModalService ,public translateService: TranslateService){
+    translateService.addLangs(['en', 'es']);
+    translateService.setDefaultLang('es');
+    
+    // Get User Language from Browser
+    const browserLang = translateService.getBrowserLang();
+    translateService.use(browserLang.match(/es|en/) ? browserLang : 'en');
   }
-
+  switchLanguage(language: string) {
+    this.translateService.use(language);
+  }
     
    openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template);
+    this.modalRef = this.modalService.show(template,{class:'modal-fullscreen-sm-down'});
     
  }
  
+
  closeVentana(): void {
   this.modalRef.hide();
 }

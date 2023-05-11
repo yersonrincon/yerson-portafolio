@@ -5,6 +5,8 @@ import { ProyectosRoutingModule } from './proyectos-routing.module';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     ProyectosRoutingModule,
     MatGridListModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    TranslateModule
+  
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

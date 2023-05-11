@@ -7,27 +7,17 @@
     }
  
     mat-list-item {
+        margin-top: 30px;
         color: #000000 !important;
         font-size: 0.8rem;
         height: 44px !important;
       
-        
         &:hover {
             color: #f2f5f7 !important;
-            margin-top: 40px;
+           
         }
-         ::ng-deep {
-            margin-top: 40px;
-            .mat-list-item-content {
-               
-                margin-top: 40px;
-                &:hover {
-                    background: #2c3344 !important;
-                }
-            }
-        }
+     
+
+           
     }
     
-.mat-icon {
-    font-size: 40px;
-}

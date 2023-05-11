@@ -3,29 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FlexLayoutModule} from '@angular/flex-layout';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxSpinnerModule } from 'ngx-spinner';
-
-
-
-//import {MatNativeDateModule} from '@angular/material';
-
-//import {DemoMaterialModule} from './material-module';
-
-
-//import {CardOverviewExample} from './app/card-overview-example';
-
-
-
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
     AppComponent,
-  
-  
-    
   ],
   imports: [
     BrowserModule,
@@ -33,11 +18,12 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     FlexLayoutModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
+    MatTooltipModule,
     ModalModule.forRoot(),  
-   
+    
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }

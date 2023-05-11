@@ -2,10 +2,32 @@
 <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
 <mat-drawer-container>
     <mat-drawer mode="side" [opened]="sideBarOpen">
+        
+        
         <app-sidenav></app-sidenav>
+        
+        <a (click)="switchLanguage('es')"  >
+            
+          <img src="..//..//../assets/iconos/colombia.png"  type="button" style="width: 37px;  margin: 1rem;">
+          
+        </a>
+        <div class="dropdown">
+        <a  (click)="switchLanguage('en')"  >
+           
+                <img src="..//..//../assets/iconos/estados.png"  type="button"  style="width: 37px;  margin: 1rem; ">
+          
+        </a>
+      
+            
+          </div>
+          
+        
     </mat-drawer>
+   
     <mat-drawer-content>
+        
         <router-outlet></router-outlet>
+        
         <app-footer ></app-footer>
     </mat-drawer-content>
 

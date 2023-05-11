@@ -7,7 +7,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -20,6 +21,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MatButtonToggleModule,
     PdfViewerModule,
     MatIconModule,
+    MatTooltipModule,
+    TranslateModule
  
   ]
 })

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ISourceOptions } from 'tsparticles';
+import { TranslateService,LangChangeEvent } from '@ngx-translate/core';
 
 
 @Component({
@@ -8,12 +9,40 @@ import { ISourceOptions } from 'tsparticles';
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
-
-
-
-  ngOnInit(){
-
+ // optionalLabelTextChoices: string[] = ['Option 1', 'Option 2',];
+    
+ 
+  constructor(private translateService: TranslateService) {
+    translateService.addLangs(['en', 'es']);
+    translateService.setDefaultLang('es');
+    translateService.use('es')
   }
+
+  switchLanguage(language: string):void {
+    this.translateService.use(language);
+  }
+
+  
+  
+
+
+  
+  ngOnInit(): void {
+    
+  }
+
+ /* public idiomaPrincipal: string = 'es';
+  constructor(private translate: TranslateService) {
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.idiomaPrincipal = event.lang
+    });
+  }*/
+
+  /*ngOnInit(): void {
+    this.idiomaPrincipal =  this.translate.currentLang;
+  }*/
+ 
+
 
   sideBarOpen = true;
   
