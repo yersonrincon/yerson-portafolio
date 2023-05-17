@@ -21,9 +21,9 @@ export class ProyectosComponent implements OnInit {
     {title: 'Tifon',  url:'https://github.com/yersonrincon/tifon-front', content: 'Content here',src:'..//../assets/img/Captura1.PNG',
     descripcion: 'Sistema de control de ventas, para Autolavados, nos  que muestra las ventas en tiempo real.'},
     {title: 'Peliculas',  url:'https://github.com/yersonrincon/peliculas-app',content: 'Content here',src:'..//../assets/img/Captura8.PNG',
-    descripcion: 'Aplicacion que consume la información de una app de peliciulas nos nuestrar las peliculas mas vistas con su calificación.' },
+    descripcion: 'Aplicación que consume una API  de una App de películas nos  trae información de las películas más vistas  por los usuarios con su calificación.' },
     {title: 'Formulario',  url:'https://github.com/yersonrincon/formularioangular', content: 'Content here',src:'..//../assets/img/Captura9.PNG',
-    descripcion: 'Formulario que nos permite almacenar datos en el local Storage tiene cierto tipo de validaciones  a la hora de ingresar datos.'},
+    descripcion: 'Formulario que nos permite almacenar datos en el local Storage tiene cierto tipo de validaciones a la hora de ingresar datos.'},
    
   ];
 
