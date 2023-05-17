@@ -1,0 +1,24 @@
+{
+ "imagenes": [
+    { "title":"visual","src":"..//..//../assets/iconos/bootstrap.png","width":40},
+    { "title":"fjfj","src":"..//..//../assets/iconos/bootstrap.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/npm.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/visual.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/java.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/visualcode.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/scss.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/postman.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/node.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/angular.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/js.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/api.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/express.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/git.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/mongo.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/adobe.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/html.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/postgres.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/typescript.png"},
+    { "title":"visual","src":"..//..//../assets/iconos/dbeaver.png"}
+ ]    
+}

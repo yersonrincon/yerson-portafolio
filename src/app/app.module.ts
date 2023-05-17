@@ -8,6 +8,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import {MatTooltipModule} from '@angular/material/tooltip';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,11 +20,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     BrowserAnimationsModule,
     NgxSpinnerModule,
     MatTooltipModule,
-    ModalModule.forRoot(),  
+    ModalModule.forRoot()
+   
     
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent,]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

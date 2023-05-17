@@ -11,42 +11,41 @@
   margin-bottom: 2em;
 }
 
-.card-title{
+.card-title {
   color: #ffffff;
   font-size: 50px;
   font-weight: 800;
 }
-  
 
 
 
 
 
-.card-title2{
-    color: #00ffb2;
-    font-size: 36px;
-    font-weight: 800;
- 
-}
-.card-text{
-  font-size:19px;
-  color:rgb(202, 199, 199) ;
+
+
+.card-text {
+  font-size: 19px;
+  color: rgb(202, 199, 199);
 }
 
 
-
+.ng-lottie{
+  margin-top: 300px;
+}
 .btn-outline-info {
-  color:  #ffffff;
+  color: #ffffff;
   border-color: #ffffff;
 }
-.button1{
-background-color: #99ff00;
 
-font-size: 25px;
-height: 60px;
+.button1 {
+  background-color: #99ff00;
+
+  font-size: 25px;
+  height: 60px;
 
 }
-.imagen{
+
+.imagen {
   margin-left: 7px;
   width: 260px;
   height: 90%;
@@ -61,23 +60,24 @@ height: 60px;
   margin-right: auto;
   width: 310px;
   height: 375px
+}
 
- }
- .cuadro2 {
+.cuadro2 {
   border: 6px solid #00ffb2;
   margin-top: 7%;
   margin-left: 18px;
   width: 310px;
   height: 375px;
- }
- .imagen2{
+}
+
+.imagen2 {
   width: 235px;
   height: 290px;
- }
+}
 
 
- .card-title3{
-  color: #cff5f1;
+.card-title3 {
+  color: #ffffff;
   font-size: 21px;
- }
-
+  font-weight: 800
+}

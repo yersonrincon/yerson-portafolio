@@ -1,8 +1,9 @@
 
 
 tbody,  td{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
+    padding: 0rem;
     color: #ffffff;
 }
 .h5,h5{
@@ -10,7 +11,7 @@ tbody,  td{
     margin: 8px;
     color: #ffffff;
     font-weight: 800;
-    font-size: 19px;
+    font-size: 20px;
    
 } 
 .h4,h4{
@@ -31,11 +32,14 @@ img{
 .modales   {
     background-color: #444445;
     
-  
+    -webkit-border-radius: 21px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
 }
 
 .margen1{
     border: 6px solid #ceefe5;
+    margin-top: 400px;
     margin: auto;
     display: block;
     margin-left: auto;
@@ -54,4 +58,9 @@ td[_ngcontent-buj-c52] {
     font-size: 28px;
     font-weight: 800;
     color: #14c2b1;
+}
+
+tbody,th {
+
+    margin: 40px;
 }

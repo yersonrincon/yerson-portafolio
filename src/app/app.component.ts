@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TranslateService,LangChangeEvent } from '@ngx-translate/core';
 
 import { NgxSpinnerService } from 'ngx-spinner';
 
@@ -8,8 +7,10 @@ import { NgxSpinnerService } from 'ngx-spinner';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'yerson-portafolio';
+
   constructor(private spinner: NgxSpinnerService,) 
   {
   

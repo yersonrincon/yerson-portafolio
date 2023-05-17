@@ -3,14 +3,63 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import * as FileSaver from 'file-saver';
 import { TranslateService } from '@ngx-translate/core';
 
+import { AnimationOptions } from "ngx-lottie";
 @Component({
   selector: 'app-descripcion',
   templateUrl: './descripcion.component.html',
   styleUrls: ['./descripcion.component.scss']
 })
 export class DescripcionComponent implements OnInit{
-  modalRef!: BsModalRef;
+  lat: number =     4.685327068312281;
+  lng: number = -74.11243024647001;
   
+ 
+  options: AnimationOptions = {
+    path: "assets/mapa.json"
+    
+  }
+  trabajo: AnimationOptions = {
+    path: "assets/trabajo.json"
+    
+  }
+
+  servicios: AnimationOptions = {
+    path: "assets/servicios.json"
+    
+   
+  }
+  perfil: AnimationOptions = {
+    path: "assets/perfil.json",
+    
+  }
+  estudios: AnimationOptions = {
+    path: "assets/estudios.json",
+    
+  }
+  cv: AnimationOptions = {
+    path: "assets/cv.json",
+    
+  }
+
+
+ 
+  curriculon: AnimationOptions = {
+    path: "assets/curriculon.json",
+    
+  }
+
+
+  
+
+  modalRef!: BsModalRef;
+
+
+
+  imagenes : {src:string}[]=[
+    { src:"..//..//../assets/img/yersoncv.jpg"}
+  ]
+
+
 
   constructor( private modalService: BsModalService ,public translateService: TranslateService){
     translateService.addLangs(['en', 'es']);
@@ -25,7 +74,7 @@ export class DescripcionComponent implements OnInit{
   }
     
    openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template,{class:'modal-fullscreen-sm-down'});
+    this.modalRef = this.modalService.show(template,{class:'modal-dialog rounded-30'});
     
  }
  
@@ -42,11 +91,10 @@ downloadPdf() {
 }
 
 ngOnInit() {
-  /** spinner starts on init */
+ 
   
 }
   
 
-  
-
 }
+

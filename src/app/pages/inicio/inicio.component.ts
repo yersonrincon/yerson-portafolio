@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ISourceOptions } from 'tsparticles';
 import { TranslateService,LangChangeEvent } from '@ngx-translate/core';
+import { style } from '@angular/animations';
 
 
 @Component({
@@ -22,11 +23,7 @@ export class InicioComponent implements OnInit {
     this.translateService.use(language);
   }
 
-  
-  
 
-
-  
   ngOnInit(): void {
     
   }
@@ -54,7 +51,7 @@ export class InicioComponent implements OnInit {
   id = "tsparticles";
   options :ISourceOptions = {
 
-    fpsLimit: 60,
+    fpsLimit: 90,
     fullScreen: {
       enable: true
     },
@@ -91,12 +88,13 @@ export class InicioComponent implements OnInit {
       },
       move: {
         attract: { enable: false, rotateX: 600, rotateY: 1200 },
-        bounce: false,
+        bounce: true,
         direction: "none",
         enable: true,
         out_mode: "out",
+        //out_mode: "bounce",
         random: false,
-        speed: 3,
+        speed: 5,
         straight: false
       },
       rotate: {
@@ -106,13 +104,15 @@ export class InicioComponent implements OnInit {
           sync: false
         }
       },
-      number: { density: { enable: true, area: 800 }, value: 5 },
+      number: { density: { enable: true, area: 800 }, value: 6 },
       opacity: {
         animation: { enable: true, minimumValue: 0.5, speed: 1, sync: false },
         random: false,
         value: 1
       },
-      shape: {
+
+      
+   /*   shape: {
         character: [
             {
                 fill: true,
@@ -125,13 +125,66 @@ export class InicioComponent implements OnInit {
         image: {
           height: 100,
           replace_color: true,
-          src: "images/github.svg",
+          src: "https://particles.js.org/images/amongus_blue.png",
           width: 100
         },
         polygon: { nb_sides: 5 },
         stroke: { color: "random", width: 1 },
         type: "char"
-      },
+      }
+      */
+      shape: {
+        type: "images",
+        options: {
+          images: [
+          
+            {
+              height: 100,
+              width: 100,
+             
+              
+              src: "..//..//../assets/iconos/android.png",
+         
+           
+              
+            },
+            
+            {
+              height: 100,
+              width: 100,
+             
+              
+              src: "..//..//../assets/iconos/notebook.png",
+         
+           
+              
+            },
+            {
+              height: 100,
+              width: 100,
+             
+              
+              src: "..//..//../assets/iconos/pencil.png",
+         
+           
+              
+            },
+            {
+              height: 100,
+              width: 100,
+             
+              
+              src: "..//..//../assets/iconos/gallery.png",
+         
+           
+              
+            },
+            
+          ]
+        }
+      }
+,
+
       size: {
         anim: { enable: true, minimumValue: 8, speed: 20, sync: false },
         random: { minimumValue: 8, enable: true },

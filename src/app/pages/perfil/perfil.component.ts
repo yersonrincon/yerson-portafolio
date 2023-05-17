@@ -1,6 +1,8 @@
 import { Component,OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import * as FileSaver from 'file-saver';
+import { AnimationOptions } from "ngx-lottie";
+
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -8,6 +10,13 @@ import * as FileSaver from 'file-saver';
   styleUrls: ['./perfil.component.scss']
 })
 export class PerfilComponent implements OnInit {
+
+  codigo: AnimationOptions = {
+    path: "assets/codigo.json"
+    
+   
+  }
+
 
   constructor(public translateService: TranslateService) {
     translateService.addLangs(['en', 'es']);

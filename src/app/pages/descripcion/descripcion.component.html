@@ -1,123 +1,144 @@
 <div class="container">
-    <div class="title1 animate__animated animate__pulse text-center">
-       {{"perfil"|translate}}
+    <div class="card-title2 animate__animated animate__pulse text-center">
+        {{"perfil"|translate}}
     </div>
-    <div class=" row">
-        <div class="col-md-7">
-            <table mat-table class="mat-elevation-z8 demo-table">
-                <tr>
-                    <th>
+    <div class="row">
+        <div class="col-md-6">
+            <tr>
+                <th>
+                    <div class="btn btn-outline-light" style="padding: 0rem;  margin: 30px;">
                         <a role="button">
-                            <img src="..//..//../assets/iconos/person.png" (click)="openModal(template1)"
-                                style="width: 90px;margin: 20px;">
+                            <ng-lottie width="140px" [options]="perfil" (click)="openModal(template1)"> </ng-lottie>
                         </a>
-                    </th>
-                    <td class="animate__animated animate__pulse">
-                       {{"name2"|translate}}
-                    </td>
-                </tr>
-                <tr>
-                    <th> <a role="button">
-                            <img src="..//..//../assets/iconos/gorra.png" (click)="openModal(template2)"
-                                style="width: 90px;margin: 20px;"> </a></th>
-                    <td class="animate__animated animate__pulse">
-                      {{"estudios"|translate}}</td>
-                </tr>
-                <tr>
-                    <th> <a role="button">
-                            <img src="..//..//../assets/iconos/experiencia.png" (click)="openModal(template4)"
-                                style="width: 90px;margin: 20px;"></a> </th>
-                    <td class="animate__animated animate__pulse">{{"experiencia"|translate}}</td>
-                </tr>
-                <tr>
-                    <th> <a role="button">
-                            <img src="..//..//../assets/iconos/place.png" (click)="openModal(template3)"
-                                style="width: 90px;margin: 20px;"></a> </th>
-                    <td class="animate__animated animate__pulse">{{"ubicacion"|translate}}.</td>
-                </tr>
-            </table>
+                    </div>
+                </th>
+                <td class="animate__animated animate__pulse">
+                    {{"name2"|translate}}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <div class="btn btn-outline-light" style="padding: 0rem; margin: 30px;">
+                        <a role="button">
+                            <ng-lottie width="140px" [options]="trabajo" (click)="openModal(template4)">
+                            </ng-lottie>
+                        </a>
+                    </div>
+                </th>
+                <td class="animate__animated animate__pulse">{{"experiencia1"|translate}}</td>
+            </tr>
+
         </div>
-        <div class="col-md-5">
-            <div class="text-center">
-            <div class="margen1  animate__animated animate__backInRight">
-                <img src="..//..//../assets/img/yersoncv.jpg"  class="img-responsive"style="width: 100%;height: 100%; display: block;
-                margin-left: auto;
-                margin-right: auto;">
-            </div>
-            </div>
-            <div class="text-center mt-3" >
-                <a class="btn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;"
-                    role="button">
-                    <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
-            </div>
+        <div class="col-md-6">
+            <tr>
+                <th>
+                    <div class="btn btn-outline-light" style="padding: 0rem;  margin: 30px;"><a role="button">
+                            <ng-lottie width="140px" [options]="estudios" (click)="openModal(template2)">
+                            </ng-lottie>
+                        </a>
+                    </div>
+                </th>
+                <td class="animate__animated animate__pulse">
+                    {{"estudios"|translate}}</td>
+            </tr>
+            <tr>
+                <th>
+                    <div class="btn btn-outline-light" style="padding: 0rem;  margin: 30px;">
+                        <a role="button">
+                            <ng-lottie width="140px" [options]="options" (click)="openModal(template3)"></ng-lottie>
+                        </a>
+                    </div>
+                </th>
+                <td class="animate__animated animate__pulse">{{"ubicacion"|translate}}</td>
+            </tr>
+
         </div>
     </div>
-
-    <ng-template #template1>
-        <div class="modales">
-
-            <div class="modal-header">
-                <h4 class="modal-title pull-left">{{"perfil1"|translate}}</h4>
-                <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="closeVentana()"></button>
-            </div>
-            <div class="modal-body">  
-                <h5>{{"descripcion1"|translate}} </h5>
-                <h5> {{"descripcion2"|translate}} </h5>
-
-            </div>
+</div>
+<ng-template #template1>
+    <div class="modales">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">{{"perfil1"|translate}}</h4>
+            <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" aria-label="Close"
+                (click)="closeVentana()"></button>
         </div>
-    </ng-template>
-    <ng-template #template2>
-        <div class="modales">
-
-            <div class="modal-header">
-                <h4 class="modal-title pull-left">Educación:</h4>
-                <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="closeVentana()"></button>
-            </div>
-            <div class="modal-body">
-                <h4>Tecnólogo en Análisis y Desarrollo de Sistemas de Información:</h4>
-                <h4>Servicio Nacional de Aprendizaje (SENA):</h4>
-                <h5>Fecha Inicio: 2020/10/10 Fecha Final: 2022/10/10</h5>
-                <h4> Curso de Programación:</h4>
-                <h4> UDEMY</h4>
-                <h5> Angular de 0 a experto node js de 0 a experto.</h5>
-                <h5>Fecha Inico: 2019</h5>
-                <h4> Bachiller académico.</h4>
-                <h5>Colegio San Gabriel.</h5>
-                <h5>Fecha: 2019</h5>
-
-            </div>
+        <div class="modal-body">
+            <h5>{{"descripcion1"|translate}} </h5>
+            <h5> {{"descripcion2"|translate}} </h5>
         </div>
-    </ng-template>
-    <ng-template #template3>
-        <div class="modales">
-            <div class="modal-header">
-                <h4 class="modal-title pull-left">Ubicación:</h4>
-                <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="closeVentana()"></button>
-            </div>
-            <div class="modal-body">
-                <h4>Bogotá(Colombia)</h4>
-                <h5> Calle 64 C BIS # 85 j 65</h5>
-                <h5>Barrio: Álamos</h5>
+    </div>
+</ng-template>
+<ng-template #template2>
+    <div class="modales">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left text-center">Educación: </h4>
+            <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" (click)="closeVentana()"></button>
+        </div>
+        <div class="modal-body">
+            <h5> {{"estudios1"|translate}}
+            </h5>
+        </div>
+    </div>
+</ng-template>
+<ng-template #template3>
+    <div class="modales">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">{{"ubicacion1"|translate}}</h4>
+            <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" aria-label="Close"
+                (click)="closeVentana()"></button>
+        </div>
+        <div class="modal-body">
+            <h4>Bogotá(Colombia)</h4>
+            <h5> {{"ubicaion2"|translate}}</h5>
+            <h5>{{"ubicacion3"|translate}}</h5>
+            <h5>{{"ubicacion4"|translate}}</h5>
+            <a href="mailto:yersonhernandez202@gmail.com">
                 <h5>Correo: yersonhernandez202@gmail.com</h5>
-                <h5>Telefono: 3208707335 - 3116204093</h5>
+            </a>
+            <a href="https://www.linkedin.com/in/yerson-hernandez-0a6897229/">
+                <h5>Linkedin:yerson-hernandez-0a6897229/</h5>
+            </a>
+            <agm-map [latitude]="lat" [longitude]="lng" style="height: 500px">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+        </div>
+    </div>
+</ng-template>
+<ng-template #template4>
+    <div class="modales">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">{{"experiencia"|translate}}</h4>
+            <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" aria-label="Close"
+                (click)="closeVentana()"></button>
+        </div>
+        <div class="modal-body">
+            <h5> {{"experiencia2"|translate}}</h5>
+        </div>
+    </div>
+</ng-template>
+
+<div class="container" style="margin-top: 150px;">
+
+    <div class="row">
+        <div class="col-md-5">
+            <!--  <div class="margen1  animate__animated animate__backInRight">
+                <img src="..//..//../assets/img/yersoncv.jpg" class="img-responsive" style="width: 100%;height: 100%; display: block;
+            margin-left: auto;
+            margin-right: auto;">
+            </div>-->
+            <div class="lottie-animation mt-10">
+                <ng-lottie [options]="servicios" width="500px"></ng-lottie>
             </div>
         </div>
-    </ng-template>
-    <ng-template #template4>
-        <div class="modales">
-            <div class="modal-header">
-                <h4 class="modal-title pull-left">Experiencia:</h4>
-                <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="closeVentana()"></button>
+        <div class="col-md-5" style=" padding: 6rem;margin-top: 124px;">
+            <div class="card-title2  text-center animate__animated animate__pulse">
+                {{"texthoja"|translate}}<br>
+                <a class="btn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;" role="button">
+                 <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
             </div>
-            <div class="modal-body">
-                <h4>Desarolador Web</h4>
-                <h4>Empresa CGI(Banco Sandander)</h4>
-                <h4>Funciones:</h4>
-                <h5> Diseñar el sistema de acuerdo con los requisitos del cliente (Frontend,Backend).</h5>
-                <h5> Construir manuales de usuario de acuerdo al sistema de información</h5>
-                <h5>Brindar soporte a los usuarios gestionado las bases de datos</h5>
-                <h5>Fecha Inico : 2021/9/11 Fecha Final: 2022/10/11</h5>
-            </div>
+
         </div>
-    </ng-template>
+
+    </div>
+
+</div>

@@ -9,7 +9,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { TranslateModule } from '@ngx-translate/core';
+import { LottieModule } from "ngx-lottie";
+import player from "lottie-web";
 
+// Note we need a separate function as it's required
+// by the AOT compiler.
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [ PerfilComponent],
@@ -22,7 +29,8 @@ import { TranslateModule } from '@ngx-translate/core';
     PdfViewerModule,
     MatIconModule,
     MatTooltipModule,
-    TranslateModule
+    TranslateModule,
+    LottieModule.forRoot({ player: playerFactory })
  
   ]
 })

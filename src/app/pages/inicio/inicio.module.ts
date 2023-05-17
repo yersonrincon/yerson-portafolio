@@ -18,6 +18,7 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
+
 export function translateHttpLoaderFactory(http: HttpClient) {
 
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -41,7 +42,7 @@ export function translateHttpLoaderFactory(http: HttpClient) {
     NgParticlesModule,
     FlexLayoutModule, 
     TooltipModule,
-
+  
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

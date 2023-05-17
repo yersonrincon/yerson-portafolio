@@ -1,5 +1,5 @@
 {
-    "saludo":"Hello my Name Is:",
+    "saludo":"Hi I am:",
     "name":"Yersón Hernández Rincón",
     "profecion":"Developer: Full Stack",
     "titleProyectos":"Personal projects",
@@ -12,7 +12,17 @@
     "descripcion2":"I have knowledge in Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL, Mongo DB, HTML, CSS and Bootstrap.",
     "name2": "Name: Yersón Hernández Rincón.",
     "estudios":"Studies: Technologist in Analysis and Development of Information Systems.",
-    "experiencia":"Experience: Web Development CGI Company.",
+    "estudios1":"Information Systems Analysis and Development Technologist: National Learning Service (SENA): Start Date: 2020/10/10 End Date: 2022/10/10 Programming Course: UDEMY Angular from 0 to expert node.js from 0 to expert. Start date: 2019 Academic bachelor. Saint Gabriel College. Date: 2019",
+    "experiencia":"Experience:",
+    "experiencia1":"Experience: Web Development CGI Company.",
+    "experiencia2":"CGI Company Web Developer (Banco Santander) Functions: Design the system according to the client's requirements (Frontend, Backend). Build user manuals according to the information system Provide support to users managed databases Start Date: 2021/9/11 End Date: 2022/10/11",
+    "proyectos":"Mi Studies:",
+    "proyectos1":"Knowledge in:",
     "ubicacion":"Location: Bogota DC.",
+    "ubicacion1":"Location:",
+    "ubicaion2":"Street: 64 C BIS # 85 J 65",
+    "ubicacion3":"Neighborhood: Alamos",
+    "ubicacion4" :"Telephone: 3208707335 - 3116204093",
+    "texthoja":"My Curriculum:",
     "button3":"Download CV"
 }  
