@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 import { DescripcionComponent } from './descripcion.component';
 import { DescripcionRoutingModule } from './descripcion-routing.module';

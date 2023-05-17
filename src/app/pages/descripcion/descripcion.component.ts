@@ -2,8 +2,8 @@ import { Component, TemplateRef,OnInit } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import * as FileSaver from 'file-saver';
 import { TranslateService } from '@ngx-translate/core';
-
 import { AnimationOptions } from "ngx-lottie";
+
 @Component({
   selector: 'app-descripcion',
   templateUrl: './descripcion.component.html',
@@ -13,20 +13,17 @@ export class DescripcionComponent implements OnInit{
   lat: number =     4.685327068312281;
   lng: number = -74.11243024647001;
   
- 
   options: AnimationOptions = {
     path: "assets/mapa.json"
     
   }
   trabajo: AnimationOptions = {
     path: "assets/trabajo.json"
-    
   }
 
   servicios: AnimationOptions = {
     path: "assets/servicios.json"
     
-   
   }
   perfil: AnimationOptions = {
     path: "assets/perfil.json",
@@ -41,24 +38,16 @@ export class DescripcionComponent implements OnInit{
     
   }
 
-
- 
   curriculon: AnimationOptions = {
     path: "assets/curriculon.json",
     
   }
 
-
-  
-
   modalRef!: BsModalRef;
-
-
 
   imagenes : {src:string}[]=[
     { src:"..//..//../assets/img/yersoncv.jpg"}
   ]
-
 
 
   constructor( private modalService: BsModalService ,public translateService: TranslateService){
