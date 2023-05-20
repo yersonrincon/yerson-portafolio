@@ -1,59 +1,35 @@
-
 html,
-
-
 body {
- 
-   // font-family: 'Hind Vadodara', sans-serif;
-   //font-family: 'Zen Dots', cursive;
-  // font-family: 'Aldrich', sans-serif;
- // font-family: 'Montagu Slab', serif;
- //font-family: 'Plaster', cursive;
- //font-family: 'Saira Stencil One', cursive;
-font-family: 'Share Tech Mono', monospace;
-// font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
 
-/*
-font-family: 'Aldrich', sans-serif;
-font-family: 'Montagu Slab', serif;
-font-family: 'Plaster', cursive;
-font-family: 'Saira Stencil One', cursive;
-font-family: 'Share Tech Mono', monospace;
-font-family: 'Sofia Sans', sans-serif;
-font-family: 'Zen Dots', cursive;*/
-
-.title1{
-    font-size: 70px;
-    color: #00ffb2;
-    font-weight: 800;
+.title1 {
+  font-size: 70px;
+  color: #00ffb2;
+  font-weight: 800;
 }
 
-.title2{
-    color: #00ffb2;
-    font-size: 36px;
-    font-weight: 600;
- 
-}
-.container{
-    margin-top: 46px;
-  }
-  
-  .margen {
-    border: 5px solid #00ffb2;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin-top: 40px;
-
-
+.title2 {
+  color: #00ffb2;
+  font-size: 36px;
+  font-weight: 600;
 
 }
 
+.margen {
+  border: 5px solid #00ffb2;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 40px;
+}
 
+.container {
+  margin-top: 46px;
+}
 
 .card-title2 {
-    color: #00ffb2;
-    font-size: 45px;
-    font-weight: 800;
-  
-  }
+  color: #00ffb2;
+  font-size: 45px;
+  font-weight: 800;
+
+}

@@ -3,13 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
- 
   {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then(m => m.InicioModule),
   },
-  { 
-    path: '**', redirectTo: '/inicio/perfil', pathMatch: 'full' 
+  {
+    path: '**', redirectTo: '/inicio/perfil', pathMatch: 'full'
   },
 ];
 

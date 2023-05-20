@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { DescripcionResolver } from './descripcion.resolver';
 
 describe('DescripcionResolver', () => {

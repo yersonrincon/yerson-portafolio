@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { PerfilComponent } from './perfil.component';
 import { PerfilRoutingModule } from './perfil-routing.module';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
@@ -30,6 +31,7 @@ export function playerFactory() {
     MatIconModule,
     MatTooltipModule,
     TranslateModule,
+    FlexLayoutModule,
     LottieModule.forRoot({ player: playerFactory })
  
   ]

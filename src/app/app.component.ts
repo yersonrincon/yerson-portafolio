@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -11,17 +10,15 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class AppComponent {
   title = 'yerson-portafolio';
 
-  constructor(private spinner: NgxSpinnerService,) 
-  {
-  
+  constructor(private spinner: NgxSpinnerService,) {
+
   }
-    ngOnInit(){
-      this.spinner.show();
-  
-      setTimeout(() => {
-        /** spinner ends after 5 seconds */
-        this.spinner.hide();
-      }, 1000);
-    }
+  ngOnInit() {
+    this.spinner.show();
+
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 1000);
   }
-  
+}
+

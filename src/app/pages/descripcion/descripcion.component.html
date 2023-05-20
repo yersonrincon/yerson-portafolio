@@ -27,7 +27,6 @@
                 </th>
                 <td class="animate__animated animate__pulse">{{"experiencia1"|translate}}</td>
             </tr>
-
         </div>
         <div class="col-md-6">
             <tr>
@@ -51,32 +50,38 @@
                 </th>
                 <td class="animate__animated animate__pulse">{{"ubicacion"|translate}}</td>
             </tr>
-
         </div>
     </div>
 </div>
 <ng-template #template1>
     <div class="modales">
         <div class="modal-header">
-            <h4 class="modal-title pull-left">{{"perfil1"|translate}}</h4>
+            <h4 class="modal-title pull-left">{{"perfil"|translate}}</h4>
             <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" aria-label="Close"
                 (click)="closeVentana()"></button>
         </div>
-        <div class="modal-body">
-            <h5>{{"descripcion1"|translate}} </h5>
-            <h5> {{"descripcion2"|translate}} </h5>
+        <div class="modal-body" *ngFor='let descripciones of  "perfil2"| translate; let  i = index;'>
+            <div> {{descripciones.Date1}}</div>
+            <div> {{descripciones.Date2}}</div>
         </div>
     </div>
 </ng-template>
 <ng-template #template2>
     <div class="modales">
         <div class="modal-header">
-            <h4 class="modal-title pull-left text-center">Educación: </h4>
+            <h4 class="modal-title pull-left text-center">{{"estudios"|translate}}</h4>
             <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" (click)="closeVentana()"></button>
         </div>
-        <div class="modal-body">
-            <h5> {{"estudios1"|translate}}
-            </h5>
+        <div class="modal-body" *ngFor='let estudios of "estudios1"| translate; let i = index;'>
+            <li>{{estudios.Title}}</li>
+            <li>{{estudios.Curso}}</li>
+            <li>{{estudios.Fecha}}</li>
+            <li>{{estudios.Title1}}</li>
+            <li>{{estudios.Curso1}}</li>
+            <li>{{estudios.Fecha1}}</li>
+            <li>{{estudios.Title2}}</li>
+            <li>{{estudios.Curso2}}</li>
+            <li>{{estudios.Fecha2}}</li>
         </div>
     </div>
 </ng-template>
@@ -87,16 +92,16 @@
             <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" aria-label="Close"
                 (click)="closeVentana()"></button>
         </div>
-        <div class="modal-body">
-            <h4>Bogotá(Colombia)</h4>
-            <h5> {{"ubicacion2"|translate}}</h5>
-            <h5>{{"ubicacion3"|translate}}</h5>
-            <h5>{{"ubicacion4"|translate}}</h5>
+        <div class="modal-body" *ngFor='let ubicaciones of"ubicacion2"|translate;let i = index;'>
+            <li>{{ubicaciones.Title}}</li>
+            <li>{{ubicaciones.Date}}</li>
+            <li>{{ubicaciones.Date1}}</li>
+            <li>{{ubicaciones.Date2}}</li>
             <a href="mailto:yersonhernandez202@gmail.com">
-                <h5>Correo: yersonhernandez202@gmail.com</h5>
+                <li>Correo: yersonhernandez202@gmail.com</li>
             </a>
             <a href="https://www.linkedin.com/in/yerson-hernandez-0a6897229/">
-                <h5>Linkedin:yerson-hernandez-0a6897229/</h5>
+                <li>Linkedin:yerson-hernandez-0a6897229/</li>
             </a>
             <agm-map [latitude]="lat" [longitude]="lng" style="height: 500px">
                 <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
@@ -107,38 +112,33 @@
 <ng-template #template4>
     <div class="modales">
         <div class="modal-header">
-            <h4 class="modal-title pull-left">{{"experiencia"|translate}}</h4>
+            <h4 class="text-center modal-title pull-left">{{"experiencia"|translate}}</h4>
             <button class="btn-close bg-white text-dark" data-mdb-dismiss="modal" aria-label="Close"
                 (click)="closeVentana()"></button>
         </div>
         <div class="modal-body">
-            <h5> {{"experiencia2"|translate}}</h5>
+            <div class="modal-body" *ngFor='let experiencia of "experiencia2" | translate; let i = index'>
+                <li> {{experiencia.Title}} </li>
+                <li> {{experiencia.Date}} </li>
+                <li *ngFor='let fechas of experiencia.Fecha'><span>{{fechas}}</span> </li>
+                <div> {{experiencia.Date1}} </div>
+                <div> {{experiencia.Date2}} </div>
+                <div> {{experiencia.Date3}} </div>
+            </div>
         </div>
     </div>
 </ng-template>
-
-<div class="container" style="margin-top: 150px;">
-
+<div class=" lottie-animation mt-10" style="margin-top:150px;">
     <div class="row">
-        <div class="col-md-5">
-            <!--  <div class="margen1  animate__animated animate__backInRight">
-                <img src="..//..//../assets/img/yersoncv.jpg" class="img-responsive" style="width: 100%;height: 100%; display: block;
-            margin-left: auto;
-            margin-right: auto;">
-            </div>-->
-            <div class="lottie-animation mt-10">
-                <ng-lottie [options]="servicios" width="400px"></ng-lottie>
-            </div>
-        </div>
-        <div class="col-md-5" style=" padding: 3rem;margin-top: 70px;">
-            <div class="card-title2  text-center animate__animated animate__pulse">
-                {{"texthoja"|translate}}<br>
+        <div class="text-center col-md-12">
+            <div class=" text-center card-title2   animate__animated animate__pulse">
+                {{"texthoja"|translate}}
+
+                <ng-lottie  [options]="servicios" width="350px"></ng-lottie>
+
                 <a class="btn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;" role="button">
-                 <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
+                    <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
             </div>
-
         </div>
-
     </div>
-
 </div>

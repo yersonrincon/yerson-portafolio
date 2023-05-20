@@ -1,15 +1,11 @@
 import { Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
 import {register} from 'swiper/element/bundle';
-
-
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.scss'],
 })
-
 export class ProyectosComponent implements OnInit {
     members: {title: string, descripcion: string, content: string , src: string ,url:string}[] = [
     {title: 'La Pesada', url:'https://github.com/yersonrincon/front-lapesada', content: 'Content here',src:'..//../assets/img/Captura.PNG',
@@ -24,14 +20,11 @@ export class ProyectosComponent implements OnInit {
     descripcion: 'Aplicación que consume una API  de una App de películas nos  trae información de las películas más vistas  por los usuarios con su calificación.' },
     {title: 'Formulario',  url:'https://github.com/yersonrincon/formularioangular', content: 'Content here',src:'..//../assets/img/Captura9.PNG',
     descripcion: 'Formulario que nos permite almacenar datos en el local Storage tiene cierto tipo de validaciones a la hora de ingresar datos.'},
-   
   ];
 
   constructor(public translateService: TranslateService) {
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('es');
-    
-    // Get User Language from Browser
     const browserLang = translateService.getBrowserLang();
     translateService.use(browserLang.match(/es|en/) ? browserLang : 'en');
   }

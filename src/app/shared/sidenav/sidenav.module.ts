@@ -20,7 +20,6 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatDividerModule,
     MatListModule,
     MatMenuModule,
-   
     PerfilRoutingModule,
     MatToolbarModule,
     

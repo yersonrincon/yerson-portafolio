@@ -1,28 +1,60 @@
 {
-    "saludo":"Hi I am:",
-    "name":"Yersón Hernández Rincón",
-    "profecion":"Developer: Full Stack",
-    "titleProyectos":"Personal projects",
-    "mission":"My mission is to design and develop websites that meet the needs of clients.",
-    "button1":"Write me",
-    "button2":"My job",
-    "perfil":"My profile:",
-    "perfil1":"Profile:",
-    "descripcion1":"I am a person committed to their objectives and goals, with the ability to work under pressure and the willingness to work as a team.",
-    "descripcion2":"I have knowledge in Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL, Mongo DB, HTML, CSS and Bootstrap.",
+    "saludo": "Hello I am,",
+    "name": "Yerson Hernandez Rincon",
+    "profecion": "Developer: Full Stack",
+    "titleProyectos": "Personal Projects",
+    "mission": "My mission is to design and develop websites that meet the needs of customers.",
+    "button1": "Write me",
+    "button2": "My work",
+    "perfil": "My Profile:",
+    "perfil2": [
+        {
+            "Date1": "I am a person committed to his objectives and goals, with the ability to work under pressure and the willingness to work in a team.",
+            "Date2": "I have knowledge of Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL, Mongo DB, HTML, CSS and Bootstrap."
+        }
+    ],
     "name2": "Name: Yersón Hernández Rincón.",
-    "estudios":"Studies: Technologist in Analysis and Development of Information Systems.",
-    "estudios1":"Information Systems Analysis and Development Technologist: National Learning Service (SENA): Start Date: 2020/10/10 End Date: 2022/10/10 Programming Course: UDEMY Angular from 0 to expert node.js from 0 to expert. Start date: 2019 Academic bachelor. Saint Gabriel College. Date: 2019",
-    "experiencia":"Experience:",
-    "experiencia1":"Experience: Web Development CGI Company.",
-    "experiencia2":"CGI Company Web Developer (Banco Santander) Functions: Design the system according to the client's requirements (Frontend, Backend). Build user manuals according to the information system Provide support to users managed databases Start Date: 2021/9/11 End Date: 2022/10/11",
-    "proyectos":"Mi Studies:",
-    "proyectos1":"Knowledge in:",
-    "ubicacion":"Location: Bogota DC.",
-    "ubicacion1":"Location:",
-    "ubicaion2":"Street: 64 C BIS # 85 J 65",
-    "ubicacion3":"Neighborhood: Alamos",
-    "ubicacion4" :"Telephone: 3208707335 - 3116204093",
-    "texthoja":"My Curriculum:",
-    "button3":"Download CV"
-}  
+    "estudios": " Studies: ADSI Technologist:",
+    "estudios1": [
+        {
+            "Title": "SENA Regional capital district.",
+            "Curso": "Technologist at ADSI",
+            "Fecha": "Date: 2020",
+            "Title1": "Programming Course (Udemy).",
+            "Curso1": "Angular from 0 to expert. Node.js from 0 to expert.",
+            "Fecha1": "Date: 2019",
+            "Title2": "San Gabriel College",
+            "Curso2": "Academic bachelor.",
+            "Fecha2": "Date: 2016"
+        }
+    ],
+    "experiencia": "Experience:",
+    "experiencia1": "Experience: Web Development Company CGI.",
+    "experiencia2": [
+        {
+            "Title": "Position: SENA Intern.",
+            "Date": "Company: Banco Santander (CGI).",
+            "Fecha": [
+                "Start Date: 2021/9/11 ",
+                "End Date: 2022/10/11"
+            ],
+            "Date1": "Functions: Analysis, survey and documentation.",
+            "Date2": "Requirements development using HTML, Angular, Node.js, and PostgreSQL.",
+            "Date3": "Application support."
+        }
+    ],
+    "proyectos": "My studies:",
+    "proyectos1": "Knowledge in:",
+    "ubicacion": "Location: Bogota DC.",
+    "ubicacion1": "Location:",
+    "ubicacion2": [
+        {
+            "Title": "Bogotá(Colombia)",
+            "Date": "Street: 64 C BIS # 85 j 65",
+            "Date1": "Neighborhood: Alamos",
+            "Date2": "Phone: 3208707335 - 3116204093"
+        }
+    ],
+    "texthoja": "My Curriculum:",
+    "button3": "Download CV"
+}

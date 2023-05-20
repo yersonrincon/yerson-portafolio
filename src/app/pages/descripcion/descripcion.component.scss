@@ -1,5 +1,15 @@
 
 
+:host {  
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
 tbody,  td{
     font-size: 25px;
     font-weight: 800;
@@ -31,7 +41,6 @@ img{
 
 .modales   {
     background-color: #444445;
-    
     -webkit-border-radius: 21px !important;
     -moz-border-radius: 0px !important;
     border-radius: 0px !important; 
@@ -47,7 +56,6 @@ img{
     width: 370px;
     height: 490px
 }
-
 .modal-title{
     color: #cff5f1;
     font-weight: 800;
@@ -59,8 +67,13 @@ td[_ngcontent-buj-c52] {
     font-weight: 800;
     color: #14c2b1;
 }
-
 tbody,th {
 
     margin: 40px;
+}
+.modal-body{
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 1rem;
 }

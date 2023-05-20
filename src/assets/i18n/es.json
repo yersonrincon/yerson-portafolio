@@ -1,31 +1,60 @@
 {
-    "saludo":"Hola Soy,",
-    "name":"Yersón Hernández Rincón",
-    "profecion":"Desarrollador: Full Stack",
-    "titleProyectos":"Proyectos Personales",
-    "mission":"Mi misión es diseñar y desarrollar sitios web que se acomoden a las necesidades de los clientes.",
-    "button1":"Escribeme",
-    "button2":"Mi trabajo",
-    "perfil":"Mi Perfil:",
-    "perfil1":"Perfil:",
-    "descripcion1":"Soy una persona comprometida con sus objetivos y metas, con capacidad de trabajo bajo presión y la disposición de trabajar en equipo",
-    "descripcion2":"Cuento con conocimientos en Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL, Mongo DB, HTML, CSS y Bootstrap.",
+    "saludo": "Hola Soy,",
+    "name": "Yersón Hernández Rincón",
+    "profecion": "Desarrollador: Full Stack",
+    "titleProyectos": "Proyectos Personales",
+    "mission": "Mi misión es diseñar y desarrollar sitios web que se acomoden a las necesidades de los clientes.",
+    "button1": "Escribeme",
+    "button2": "Mi trabajo",
+    "perfil": "Mi Perfil:",
+    "perfil2": [
+        {
+            "Date1": "Soy una persona comprometida con sus objetivos y metas, con capacidad de trabajo bajo presión y la disposición de trabajar en equip.",
+            "Date2": "Cuento con conocimientos en Java, Angular, Angular material NodeJs, JavaScript, MySQL, PostgreSQL, Mongo DB, HTML, CSS y Bootstrap."
+        }
+    ],
     "name2": "Nombre: Yersón Hernández Rincón.",
-    "estudios":"Tecnólogo: En Análisis, Desarrollo de Sistemas de Información.",
-    "estudios1":"Tecnólogo en Análisis y Desarrollo de Sistemas de Información: Servicio Nacional de Aprendizaje (SENA): Fecha Inicio: 2020/10/10 Fecha Final: 2022/10/10 Curso de Programación: UDEMY Angular de 0 a experto node.js de 0 a experto. Fecha Inicio: 2019 Bachiller académico. Colegio San Gabriel.",
-    "experiencia":"Experiencia:",
-    "experiencia1":"Experiencia: Desarrollo Web Empresa CGI.",
-    "experiencia2":"Desarrollador Web Empresa CGI(Banco Santander) Funciones: Diseñar el sistema de acuerdo con los requisitos del cliente (Frontend,Backend).  Construir manuales de usuario de acuerdo al sistema de información  Brindar soporte a los usuarios gestionado las bases de datos  Fecha Inicio: 2021/9/11 Fecha Final: 2022/10/11",
-    "proyectos":"Mis estudios:",
-    "proyectos1":"Conocimientos en:",
-    "ubicacion":"Ubicación: Bogotá DC.",
-    "ubicacion1":"Ubicación:",
-    "ubicacion2":"Calle: 64 C BIS # 85 j 65",
-    "ubicacion3":"Barrio: Álamo",
-    "ubicacion4":"Teléfono: 3208707335 - 3116204093",
-    "texthoja":"Mi Curriculum:",
-    "button3":"Descargar CV "
-  
- 
-
-}           
+    "estudios": "Estudios: Tecnólogo en ADSI",
+    "estudios1": [
+        {
+            "Title": "SENA Regional distrito capital.",
+            "Curso": "Tecnólogo Análisis y desarrollo de sistemas de información.",
+            "Fecha": "Fecha: 2020",
+            "Title1": "Curso de Programación (Udemy).",
+            "Curso1": "Angular de 0 a experto. Node.js de 0 a experto.",
+            "Fecha1": "Fecha: 2019",
+            "Title2": "Colegio San Gabriel",
+            "Curso2": "Bachiller académico.",
+            "Fecha2": "Fecha: 2016"
+        }
+    ],
+    "experiencia": "Experiencia:",
+    "experiencia1": "Experiencia: Desarrollo Web Empresa CGI.",
+    "experiencia2": [
+        {
+            "Title": "Cargo: Practicante SENA.",
+            "Date": "Empresa: Banco Santander (CGI).",
+            "Fecha": [
+                "Fecha Inicio: 2021/9/11 ",
+                "Fecha Final: 2022/10/11"
+            ],
+            "Date1": "Funciones: Análisis,levantamiento y documentación.",
+            "Date2": "Desarrollo de requerimientos por medio de los lenguajes HTML, Angular, Node.js, y PostgreSQL.",
+            "Date3": "Soporte de aplicativos."
+        }
+    ],
+    "proyectos": "Mis estudios:",
+    "proyectos1": "Conocimientos en:",
+    "ubicacion": "Ubicación: Bogotá DC.",
+    "ubicacion1": "Ubicación:",
+    "ubicacion2": [
+        {
+            "Title": "Bogotá(Colombia)",
+            "Date": "Calle: 64 C BIS # 85 j 65",
+            "Date1": "Barrio: Álamos",
+            "Date2": "Teléfono: 3208707335 - 3116204093"
+        }
+    ],
+    "texthoja": "Mi Curriculum:",
+    "button3": "Descargar CV "
+}
