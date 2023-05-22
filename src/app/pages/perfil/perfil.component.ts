@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import * as FileSaver from 'file-saver';
 import { AnimationOptions } from "ngx-lottie";
@@ -11,18 +11,14 @@ import { AnimationOptions } from "ngx-lottie";
 })
 export class PerfilComponent implements OnInit {
 
-  codigo: AnimationOptions = {
-    path: "assets/codigo.json"
-    
-   
-  }
+  texto: AnimationOptions = {
+    path: "assets/texto.json"
 
+  }
 
   constructor(public translateService: TranslateService) {
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('es');
-    
-    // Get User Language from Browser
     const browserLang = translateService.getBrowserLang();
     translateService.use(browserLang.match(/es|en/) ? browserLang : 'en');
   }
@@ -33,15 +29,13 @@ export class PerfilComponent implements OnInit {
   ngOnInit(): void {
   }
 
- /*downloadPdf1() {
-  const pdfUrl = './assets/cv/hojacv.pdf';
-  const pdfName = 'hojadevida.pdf';
-  saveAs(pdfUrl, pdfName);
+  /*downloadPdf1() {
+   const pdfUrl = './assets/cv/hojacv.pdf';
+   const pdfName = 'hojadevida.pdf';
+   saveAs(pdfUrl, pdfName);
  
-
-}*/
-
-downloadPdf() {
+ }*/
+  downloadPdf() {
     //const pdfUrl ="https://drive.google.com/file/d/1Lldvlb0Soy3g9VfyE-gl4X9HkNZc-eIe/view?usp=share_link";
     const pdfUrl = './assets/cv/hojacv.pdf';
     const pdfName = "yersoncv.pdf";

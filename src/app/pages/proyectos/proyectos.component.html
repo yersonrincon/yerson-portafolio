@@ -1,18 +1,19 @@
-<div class="container">
+<div class="container"style="margin-top:40px">
   <div class="row">
     <div class="col-md-12">
-      <h2 class="card-title2 text-center animate__animated  animate__animated animate__pulse">{{"titleProyectos"|translate}}</h2>
+      <h2 class="card-title2 text-center animate__animated  animate__animated animate__pulse">
+        {{"titleProyectos"|translate}}</h2>
       <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="4px grid">
-        <mat-card *ngFor="let member of members"  flex="calc(33%-25px)" min-height="calc(33%-25px)">
+        <mat-card *ngFor="let member of members" flex="calc(33%-25px)" min-height="calc(33%-25px)">
           <mat-card-header>
             <div class="tituloproyecto">
-            <mat-card-title class="text-center animate__animated animate__pulse ">{{member.title}}</mat-card-title>
+              <mat-card-title class="text-center animate__animated animate__pulse ">{{member.title}}</mat-card-title>
             </div>
           </mat-card-header>
           <mat-card-content class="animate__animated animate__flipInX">
-            <swiper-container   pagination="true" effect="cards" grab-cursor="true">
+            <swiper-container pagination="true" effect="cards" grab-cursor="true">
               <swiper-slide>
-                 <a [href]="member.url" target="_blank">  <img mat-card-image [src]="member.src"> </a>
+                <a [href]="member.url" target="_blank"> <img mat-card-image [src]="member.src"> </a>
               </swiper-slide>
               <swiper-slide class="cart-description">{{member.descripcion}}</swiper-slide>
             </swiper-container>
@@ -21,4 +22,3 @@
       </div>
     </div>
   </div>
-

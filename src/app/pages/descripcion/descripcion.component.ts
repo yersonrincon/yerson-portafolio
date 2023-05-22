@@ -1,6 +1,7 @@
 import { Component, TemplateRef,OnInit } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import * as FileSaver from 'file-saver';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { TranslateService } from '@ngx-translate/core';
 import { AnimationOptions } from "ngx-lottie";
 
@@ -50,11 +51,10 @@ export class DescripcionComponent implements OnInit{
   ]
 
 
-  constructor( private modalService: BsModalService ,public translateService: TranslateService){
+  constructor( private modalService: BsModalService ,public translateService: TranslateService ,){
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('es');
-    
-    // Get User Language from Browser
+
     const browserLang = translateService.getBrowserLang();
     translateService.use(browserLang.match(/es|en/) ? browserLang : 'en');
   }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ISourceOptions } from 'tsparticles';
 import { TranslateService,LangChangeEvent } from '@ngx-translate/core';
 import { style } from '@angular/animations';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class InicioComponent implements OnInit {
  // optionalLabelTextChoices: string[] = ['Option 1', 'Option 2',];
     
  
-  constructor(private translateService: TranslateService) {
+  constructor(private translateService: TranslateService,private spinner :NgxSpinnerService) {
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('es');
     translateService.use('es')
@@ -25,8 +26,13 @@ export class InicioComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
+    this.spinner.show();
+
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 1000);
   }
+    
 
  /* public idiomaPrincipal: string = 'es';
   constructor(private translate: TranslateService) {

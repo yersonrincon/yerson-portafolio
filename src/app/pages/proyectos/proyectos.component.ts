@@ -8,7 +8,7 @@ import {register} from 'swiper/element/bundle';
 })
 export class ProyectosComponent implements OnInit {
     members: {title: string, descripcion: string, content: string , src: string ,url:string}[] = [
-    {title: 'La Pesada', url:'https://github.com/yersonrincon/front-lapesada', content: 'Content here',src:'..//../assets/img/Captura.PNG',
+    {title: 'La Pesada', url:'http://lapesada-front.onrender.com/#/demoPages/login', content: 'Content here',src:'..//../assets/img/Captura.PNG',
      descripcion: 'Sistema de inventario para almacenes  de maquinaria pesada desarrollado en Angular  Node.js con base de datos en PostgreSQL.'},
     {title: 'Spotyapp', url:'https://github.com/yersonrincon/spoty-app',content: 'Content here',src:'..//../assets/img/Captura4.PNG',
      descripcion: 'Aplicación que consume una API de Spotify donde nos trae información de lo más escuchado por los usuarios.'},

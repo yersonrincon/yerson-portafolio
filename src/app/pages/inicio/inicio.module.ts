@@ -17,7 +17,7 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 export function translateHttpLoaderFactory(http: HttpClient) {
 
@@ -42,7 +42,7 @@ export function translateHttpLoaderFactory(http: HttpClient) {
     NgParticlesModule,
     FlexLayoutModule, 
     TooltipModule,
-  
+    NgxSpinnerModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
