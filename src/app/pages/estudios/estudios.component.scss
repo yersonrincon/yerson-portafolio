@@ -1,7 +1,3 @@
-.img {
-  width: 400px;
-  padding: 1rem;
-}
 .marge1 {
   border: 3px solid #ffffff;
 }
@@ -11,6 +7,7 @@
   font-size: 27px;
   font-weight: 600;
 }
+
 .title1 {
   font-size: 40px;
   color: #00ffb2;
@@ -18,6 +15,19 @@
   margin-top: 80px;
   padding: 0rem;
 }
+
 .about-info {
   padding: 0rem;
+}
+
+@media (max-width: 1250px) and (min-width: 610px) {
+  mat-card  {
+    padding: 1rem;
+   // width: 300px;
+
+   .img{
+    width:40px;
+   }
+  }
+
 }

@@ -6,7 +6,7 @@
     "mission": "My mission is to design and develop websites that meet the needs of customers.",
     "button1": "Write me",
     "button2": "My work",
-    "perfil": "My Profile:",
+    "perfil": "My Profile",
     "perfil2": [
         {
             "Date1": "I am a person committed to his objectives and goals, with the ability to work under pressure and the willingness to work in a team.",
@@ -14,8 +14,9 @@
         }
     ],
     "name2": "Name: Yersón Hernández Rincón.",
-    "estudios": " Studies: ",
-    "estudios1": [
+    "estudios1": " Studies ",
+    "estudios2": "Studies: Technologist at ADSI",
+    "estudios": [
         {
             "Title": "SENA Regional capital district.",
             "Curso": "Technologist at ADSI",
@@ -28,8 +29,8 @@
             "Fecha2": "Date: 2016"
         }
     ],
-    "experiencia": "Experience:",
-    "experiencia1": "Experience: Full Stack CGI Company.",
+    "experiencia": "Experience",
+    "experiencia1": "Full Stack Developer CGI Company.",
     "experiencia2": [
         {
             "Title": "Position: SENA Intern.",
@@ -46,7 +47,7 @@
     "proyectos": "My studies:",
     "proyectos1": "Knowledge in:",
     "ubicacion": "Location: Bogota DC.",
-    "ubicacion1": "Location:",
+    "ubicacion1": "Location",
     "ubicacion2": [
         {
             "Title": "Bogotá(Colombia)",

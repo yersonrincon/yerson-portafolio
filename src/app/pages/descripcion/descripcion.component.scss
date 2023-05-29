@@ -1,6 +1,4 @@
-
-
-:host {  
+:host {
     height: 100%;
     overflow: hidden;
     display: flex;
@@ -8,23 +6,48 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-
-tbody,  td{
     font-size: 25px;
     font-weight: 800;
     padding: 0rem;
     color: #ffffff;
 }
-.h5,h5{
-   
+
+.texto {
+    width: 50%;
+
+}
+
+.texto1 {
+    float: left;
+    margin-top: 90px;
+}
+
+@media (max-width: 700px) {
+    .raw-html-embed>div {
+        max-width: 10%;
+
+    }
+}
+
+@media (min-width: 200px) {
+    .raw-html-embed>div {
+
+        min-width: 10%;
+    }
+}
+
+.h5,
+h5 {
+
     margin: 8px;
     color: #ffffff;
     font-weight: 800;
     font-size: 20px;
-   
-} 
-.h4,h4{
+
+}
+
+.h4,
+h4 {
     color: #cff5f1;
     font-weight: 800;
     margin: 10px;
@@ -33,20 +56,20 @@ tbody,  td{
 
 
 
-img{
+img {
     width: 50px;
 
 }
-   
 
-.modales   {
+
+.modales {
     background-color: #444445;
     -webkit-border-radius: 21px !important;
     -moz-border-radius: 0px !important;
-    border-radius: 0px !important; 
+    border-radius: 0px !important;
 }
 
-.margen1{
+.margen1 {
     border: 6px solid #ceefe5;
     margin-top: 400px;
     margin: auto;
@@ -56,22 +79,21 @@ img{
     width: 370px;
     height: 490px
 }
-.modal-title{
+
+.modal-title {
     color: #cff5f1;
     font-weight: 800;
     margin: 5px;
     font-size: 30px
 }
+
 td[_ngcontent-buj-c52] {
     font-size: 28px;
     font-weight: 800;
     color: #14c2b1;
 }
-tbody,th {
 
-    margin: 40px;
-}
-.modal-body{
+.modal-body {
     font-size: 15px;
     font-weight: 800;
     color: #ffffff;
@@ -80,5 +102,34 @@ tbody,th {
 
 
 
+.btn {
+    padding: 0rem;
+    margin: 30px;
+
+}
 
 
+
+@media (max-width: 1250px) and (min-width: 200px) {}
+
+
+@media (max-width: 1250px) and (min-width: 200px) {
+    .texto1 {
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+ 
+
+}
+
+
+@media (max-width: 1100px)and (min-width: 50px) {
+    .card-title2 {
+      font-size: 25px;
+     
+  
+    }
+  }

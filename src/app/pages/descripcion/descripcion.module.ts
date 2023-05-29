@@ -8,6 +8,7 @@ import { LottieModule } from "ngx-lottie";
 import player from "lottie-web";
 import { MatDialogModule } from '@angular/material/dialog';
 import { AgmCoreModule } from '@agm/core';
+
 import { NgxSpinnerModule } from 'ngx-spinner';
 // Note we need a separate function as it's required
 // by the AOT compiler.

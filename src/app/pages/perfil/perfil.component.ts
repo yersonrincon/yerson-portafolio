@@ -10,9 +10,9 @@ import { AnimationOptions } from "ngx-lottie";
   styleUrls: ['./perfil.component.scss']
 })
 export class PerfilComponent implements OnInit {
-
-  texto: AnimationOptions = {
-    path: "assets/texto.json"
+  width = 'resize window...'
+  programador: AnimationOptions = {
+    path: "assets/programador.json"
 
   }
 
@@ -35,6 +35,12 @@ export class PerfilComponent implements OnInit {
    saveAs(pdfUrl, pdfName);
  
  }*/
+
+
+ onWindow(evt : Event) {
+  const win : Window = <Window>evt.target;
+  this.width = String(win.innerWidth );
+}
   downloadPdf() {
     //const pdfUrl ="https://drive.google.com/file/d/1Lldvlb0Soy3g9VfyE-gl4X9HkNZc-eIe/view?usp=share_link";
     const pdfUrl = './assets/cv/hojacv.pdf';

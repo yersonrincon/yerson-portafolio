@@ -6,7 +6,7 @@
     "mission": "Mi misión es diseñar y desarrollar sitios web que se acomoden a las necesidades de los clientes.",
     "button1": "Escribeme",
     "button2": "Mi trabajo",
-    "perfil": "Mi Perfil:",
+    "perfil": "Mi Perfil",
     "perfil2": [
         {
             "Date1": "Soy una persona comprometida con sus objetivos y metas, con capacidad de trabajo bajo presión y la disposición de trabajar en equip.",
@@ -14,8 +14,9 @@
         }
     ],
     "name2": "Nombre: Yersón Hernández Rincón.",
-    "estudios": "Estudios:",
-    "estudios1": [
+    "estudios1": "Estudios",
+    "estudios2": "Estudios: Tecnólogo en ADSI",
+    "estudios": [
         {
             "Title": "SENA Regional distrito capital.",
             "Curso": "Tecnólogo Análisis y desarrollo de sistemas de información.",
@@ -28,8 +29,8 @@
             "Fecha2": "Fecha: 2016"
         }
     ],
-    "experiencia": "Experiencia:",
-    "experiencia1": "Experiencia:Full Stack Empresa CGI.",
+    "experiencia": "Experiencia",
+    "experiencia1": "Experiencia: Desarrollador Full Stack Empresa CGI.",
     "experiencia2": [
         {
             "Title": "Cargo: Practicante SENA.",
@@ -46,7 +47,7 @@
     "proyectos": "Mis estudios:",
     "proyectos1": "Conocimientos en:",
     "ubicacion": "Ubicación: Bogotá DC.",
-    "ubicacion1": "Ubicación:",
+    "ubicacion1": "Ubicación",
     "ubicacion2": [
         {
             "Title": "Bogotá(Colombia)",

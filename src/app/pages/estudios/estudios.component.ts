@@ -84,6 +84,7 @@ export class EstudiosComponent {
   
   ]
 
+  
 members: { src:string }[] = [
   {src: '..//../assets/diplomas/diploma.jpg'},
   {src: '..//../assets/diplomas/Habilidades.jpg'},

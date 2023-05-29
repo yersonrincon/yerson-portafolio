@@ -44,6 +44,8 @@ export class DescripcionComponent implements OnInit{
     
   }
 
+
+
   modalRef!: BsModalRef;
 
   imagenes : {src:string}[]=[
@@ -83,6 +85,7 @@ ngOnInit() {
  
   
 }
+
   
 
 }

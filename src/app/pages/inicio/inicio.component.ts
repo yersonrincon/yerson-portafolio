@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ISourceOptions } from 'tsparticles';
-import { TranslateService,LangChangeEvent } from '@ngx-translate/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { style } from '@angular/animations';
 import { NgxSpinnerService } from 'ngx-spinner';
-
 
 @Component({
   selector: 'app-inicio',
@@ -11,58 +10,54 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
- // optionalLabelTextChoices: string[] = ['Option 1', 'Option 2',];
-    
- 
-  constructor(private translateService: TranslateService,private spinner :NgxSpinnerService) {
+  // optionalLabelTextChoices: string[] = ['Option 1', 'Option 2',];
+  constructor(private translateService: TranslateService, private spinner: NgxSpinnerService) {
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('es');
     translateService.use('es')
   }
 
-  switchLanguage(language: string):void {
+  switchLanguage(language: string): void {
     this.translateService.use(language);
   }
 
 
   ngOnInit(): void {
     this.spinner.show();
-
     setTimeout(() => {
       this.spinner.hide();
     }, 1000);
   }
-    
 
- /* public idiomaPrincipal: string = 'es';
-  constructor(private translate: TranslateService) {
-    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.idiomaPrincipal = event.lang
-    });
-  }*/
+
+  /* public idiomaPrincipal: string = 'es';
+   constructor(private translate: TranslateService) {
+     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+       this.idiomaPrincipal = event.lang
+     });
+   }*/
 
   /*ngOnInit(): void {
     this.idiomaPrincipal =  this.translate.currentLang;
   }*/
- 
+
 
 
   sideBarOpen = true;
-  
   sideBarToggler() {
     this.sideBarOpen = !this.sideBarOpen;
   }
 
-  
+
   id = "tsparticles";
-  options :ISourceOptions = {
+  options: ISourceOptions = {
 
     fpsLimit: 90,
     fullScreen: {
       enable: true
     },
     background: {
-      color: "#010113" 
+      color: "#010113"
     },
     interactivity: {
       detect_on: "canvas",
@@ -84,7 +79,7 @@ export class InicioComponent implements OnInit {
       }
     },
     particles: {
-      color: { value: "#84ff00" /*value: "ramdon"*/},
+      color: { value: "#84ff00" /*value: "ramdon"*/ },
       links: {
         color: "#84ff00" /*value: "ramdon"*/,
         distance: 150,
@@ -117,80 +112,58 @@ export class InicioComponent implements OnInit {
         value: 1
       },
 
-      
-   /*   shape: {
-        character: [
-            {
-                fill: true,
-                font: "Font Awesome 5 Brands",
-                style: "",
-                value: [  "\uf3bd" ],
-                weight: "400"
-              }
-        ],
-        image: {
-          height: 100,
-          replace_color: true,
-          src: "https://particles.js.org/images/amongus_blue.png",
-          width: 100
-        },
-        polygon: { nb_sides: 5 },
-        stroke: { color: "random", width: 1 },
-        type: "char"
-      }
-      */
+
+      /*   shape: {
+           character: [
+               {
+                   fill: true,
+                   font: "Font Awesome 5 Brands",
+                   style: "",
+                   value: [  "\uf3bd" ],
+                   weight: "400"
+                 }
+           ],
+           image: {
+             height: 100,
+             replace_color: true,
+             src: "https://particles.js.org/images/amongus_blue.png",
+             width: 100
+           },
+           polygon: { nb_sides: 5 },
+           stroke: { color: "random", width: 1 },
+           type: "char"
+         }
+         */
       shape: {
         type: "images",
         options: {
           images: [
-          
+
             {
               height: 100,
               width: 100,
-             
-              
               src: "..//..//../assets/iconos/android.png",
-         
-           
-              
             },
-            
+
             {
               height: 100,
               width: 100,
-             
-              
               src: "..//..//../assets/iconos/notebook.png",
-         
-           
-              
             },
             {
               height: 100,
               width: 100,
-             
-              
               src: "..//..//../assets/iconos/pencil.png",
-         
-           
-              
             },
             {
               height: 100,
               width: 100,
-             
-              
               src: "..//..//../assets/iconos/gallery.png",
-         
-           
-              
             },
-            
+
           ]
         }
-      }
-,
-
+      },
       size: {
         anim: { enable: true, minimumValue: 8, speed: 20, sync: false },
         random: { minimumValue: 8, enable: true },
@@ -198,5 +171,5 @@ export class InicioComponent implements OnInit {
       }
     },
     detectRetina: true
-}
+  }
 }
