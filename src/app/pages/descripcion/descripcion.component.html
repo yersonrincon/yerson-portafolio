@@ -4,10 +4,12 @@
     </div>
     <div class="row ">
         <div class=" col-md-3">
-            <div class=" text-center btn btn-outline-light">
-                <a role="button">
-                    <ng-lottie [options]="perfil" (click)="openModal(template1)"> </ng-lottie>
-                </a>
+            <div class="botones">
+                <div class=" btn btn-outline-light">
+                    <a role="button">
+                        <ng-lottie [options]="perfil" (click)="openModal(template1)"> </ng-lottie>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="texto1 col-md-3">
@@ -17,10 +19,12 @@
         </div>
 
         <div class=" col-md-3">
-            <div class="btn btn-outline-light">
-                <a role="button">
-                    <ng-lottie [options]="trabajo" (click)="openModal(template4)"> </ng-lottie>
-                </a>
+            <div class="botones">
+                <div class="btn btn-outline-light">
+                    <a role="button">
+                        <ng-lottie [options]="trabajo" (click)="openModal(template4)"> </ng-lottie>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="texto1 col-md-3">
@@ -29,10 +33,12 @@
 
 
         <div class="col-md-3">
-            <div class="btn btn-outline-light"><a role="button">
-                    <ng-lottie  [options]="estudios" (click)="openModal(template2)">
-                    </ng-lottie>
-                </a>
+            <div class="botones">
+                <div class="btn btn-outline-light"><a role="button">
+                        <ng-lottie [options]="estudios" (click)="openModal(template2)">
+                        </ng-lottie>
+                    </a>
+                </div>
             </div>
         </div>
         <div class=" texto1 col-md-3">
@@ -40,16 +46,16 @@
                 {{"estudios2"|translate}}</div>
         </div>
         <div class="col-md-3">
-            <div class="btn btn-outline-light">
-                <a role="button">
-                    <ng-lottie width="auto" [options]="options" (click)="openModal(template3)"></ng-lottie>
-                </a>
+            <div class="botones">
+                <div class="btn btn-outline-light">
+                    <a role="button">
+                        <ng-lottie [options]="options" (click)="openModal(template3)"></ng-lottie>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="texto1 col-md-3">
-
             <div class="animate__animated animate__pulse">{{"ubicacion"|translate}}</div>
-
         </div>
     </div>
 </div>
@@ -133,17 +139,18 @@
 
     <div class="row">
         <div class=" col-md-12">
-            <div class="card-title2">
+            <div class="text-center card-title2 ">
                 {{"texthoja"|translate}}
-                <ng-lottie [options]="servicios" width="350px"></ng-lottie>
-                <div class="text-center">
-                    <a class=" textbtn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;"
-                        role="button">
-                        <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
-                </div>
+            </div>
+            <div class="lottie">
+                <ng-lottie [options]="servicios" width="100%"></ng-lottie>
+            </div>
+            <div class="text-center">
+                <a class=" textbtn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;"
+                    role="button">
+                    <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
             </div>
         </div>
 
     </div>
 </div>
-
