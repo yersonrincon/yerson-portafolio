@@ -11,10 +11,12 @@
     padding: 0rem;
     color: #ffffff;
 }
+
 .texto {
     width: 50%;
 
 }
+
 .texto1 {
     float: left;
     margin-top: 120px;
@@ -24,16 +26,19 @@
     .lottie {
         width: 450px
     }
-  
+
 }
 
-.h5,h5 {
+.h5,
+h5 {
     margin: 8px;
     color: #ffffff;
     font-weight: 800;
     font-size: 20px;
 }
-.h4,h4 {
+
+.h4,
+h4 {
     color: #cff5f1;
     font-weight: 800;
     margin: 10px;
@@ -85,9 +90,10 @@ td[_ngcontent-buj-c52] {
 
 }
 
-.botones{
+.botones {
     padding: 2rem;
 }
+
 @media (max-width: 1250px) and (min-width: 200px) {
     .texto1 {
         font-size: 25px;
@@ -95,7 +101,8 @@ td[_ngcontent-buj-c52] {
         text-align: center;
         padding: 1rem;
     }
-    .botones{
+
+    .botones {
         padding: 2rem;
     }
 }
@@ -111,5 +118,5 @@ td[_ngcontent-buj-c52] {
     color: #00ffb2;
     font-size: 40px;
     font-weight: 800;
-  
-  }
+
+}
