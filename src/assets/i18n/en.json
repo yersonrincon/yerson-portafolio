@@ -45,7 +45,9 @@
         }
     ],
     "proyectos": "My studies:",
-    "proyectos1": "Knowledge in:",
+    "proyectos1": "Work Tools",
+    "proyectos2": "These are the main work tools that I highlight the most.",
+    "proyectos3": " Java Angular, Node.js, JavaScript, MySQL, PostgreSQL, MongoDB, HTML, CSS, Bootstrap, NPM, API REST.",
     "ubicacion": "Location: Bogota DC.",
     "ubicacion1": "Location",
     "ubicacion2": [

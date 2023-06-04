@@ -12,7 +12,7 @@ import { AnimationOptions } from "ngx-lottie";
 export class PerfilComponent implements OnInit {
   width = 'resize window...'
   programador: AnimationOptions = {
-    path: "assets/programador.json"
+    path: "assets/logo.json"
 
   }
 

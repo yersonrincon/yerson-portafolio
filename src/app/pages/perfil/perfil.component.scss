@@ -2,14 +2,6 @@
   padding: 0.1em;
 }
 
-.divider {
-  height: 4px;
-  width: 60px;
-  background-color: rgb(248, 248, 248);
-  margin-top: 5px;
-  margin-bottom: 2em;
-}
-
 .cuadro2 {
   border: 6px solid #00ffb2;
   margin-top: 7%;
@@ -63,7 +55,12 @@
   height: 375px
 }
 
-
+.wave-emoji{
+  height: 1em; 
+  width: 1em; 
+  margin: 0px 0.05em 0px 0.1em; 
+  vertical-align: -0.1em;
+}
 
 .imagen2 {
   width: 235px;
@@ -100,13 +97,13 @@
     font-weight: 800;
   }
 
+ 
   .card-title2 {
-    color: #00ffb2;
-    font-size: 40px;
+  
+    font-size: 25px;
     font-weight: 800;
-
+  
   }
-
   .card-title3 {
     font-size: 15px;
     font-weight: 800
@@ -141,7 +138,12 @@
   font-weight: 800
 }
 
+.card-title2 {
+  color: #00ffb2;
+  font-size: 40px;
+  font-weight: 800;
 
+}
 
 :host {
  

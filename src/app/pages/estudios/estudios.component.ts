@@ -8,8 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-estudios',
   templateUrl: './estudios.component.html',
-  styleUrls: ['./estudios.component.scss'],
-  animations: [
+  styleUrls: ['./estudios.component.scss']
+ /* animations: [
     trigger('grow', [
       transition('0=>1', [
         animate(
@@ -27,7 +27,7 @@ import { TranslateService } from '@ngx-translate/core';
         ),
       ]),
     ]),
-  ],
+  ],*/
 })
 export class EstudiosComponent {
   
@@ -35,13 +35,13 @@ export class EstudiosComponent {
   shrinkState = 0;
   shakeState = 0;
 
-  onGrowDone() {
+  /*onGrowDone() {
     this.growState = this.growState ? 0 : 1;
-  }
+  }*/
 
-  onShrinkDone() {
+  /*onShrinkDone() {
     this.shrinkState = this.shrinkState ? 0 : 1;
-  }
+  }*/
 
   angulary: AnimationOptions = {
     path: "assets/angulary.json"
@@ -50,7 +50,12 @@ export class EstudiosComponent {
   mongo: AnimationOptions = {
     path: "assets/mongo.json"
    
-  }  
+  } 
+  
+  herramientas :AnimationOptions= {
+    path:"assets/logo.json"
+  }
+
   constructor( public translateService: TranslateService){
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('es');
@@ -93,6 +98,7 @@ members: { src:string }[] = [
 
 
 ngOnInit(): void {
+  
   this.mybreakpoint = (window.innerWidth <= 700) ? 2 : 4;
  }
  handleSize(event:any) {
