@@ -65,7 +65,7 @@ export class DescripcionComponent implements OnInit{
   }
     
    openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template,{class:'modal-dialog rounded-30'});
+    this.modalRef = this.modalService.show(template,{class:'modal-dialog-centered'});
     
  }
  

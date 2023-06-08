@@ -30,7 +30,7 @@ import { TranslateService } from '@ngx-translate/core';
   ],*/
 })
 export class EstudiosComponent {
-  
+
   growState = 0;
   shrinkState = 0;
   shakeState = 0;

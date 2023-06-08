@@ -1,3 +1,5 @@
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-6" style="margin-top:100px">
@@ -14,15 +16,15 @@
         </div>
     </div>
 </div>
-<div class="">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             <h2 class="card-title2 text-center animate__animated  animate__animated animate__pulse">
                 {{"proyectos"|translate}}</h2>
-            <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around  center " fxLayoutGap="3px grid">
+            <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="3px grid">+
                 <mat-card *ngFor="let member of members" flex="calc(33%-25px)" min-height="calc(33%-25px)">
                     <div class="animate__animated animate__flipInX">
-                        <img mat-card-image [src]="member.src" style="width: 390px; height: 320px; padding: 1rem;">
+                        <img mat-card-image [src]="member.src">
                     </div>
                 </mat-card>
             </div>

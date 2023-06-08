@@ -8,6 +8,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { TranslateModule } from '@ngx-translate/core';
 import { LottieModule } from "ngx-lottie";
+
 import player from "lottie-web";
 
 export function playerFactory() {
