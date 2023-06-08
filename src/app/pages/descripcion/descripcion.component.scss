@@ -12,6 +12,11 @@
     color: #ffffff;
 }
 
+  .btn:hover {
+    background-color: #00ffb2;
+    width: 50%;
+  
+  }
 .texto {
     width: 50%;
 
@@ -52,16 +57,6 @@ h4 {
     border-radius: 0px !important;
 }
 
-.margen1 {
-    border: 6px solid #ceefe5;
-    margin-top: 400px;
-    margin: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 370px;
-    height: 490px
-}
 
 .modal-title {
     color: #cff5f1;
