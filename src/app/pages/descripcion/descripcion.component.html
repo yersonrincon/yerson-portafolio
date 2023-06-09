@@ -4,62 +4,62 @@
     </div>
 
     <div class="margen">
-    <div class="row">
-        <div class="animate__animated  animate__pulse col-md-3">
-            <div class="botones">
-                <div class=" btn btn-outline-light">
-                    <a role="button">
-                        <ng-lottie [options]="perfil" (click)="openModal(template1)"> </ng-lottie>
-                    </a>
+        <div class="row">
+            <div class="animate__animated  animate__pulse col-md-3">
+                <div class="botones">
+                    <div class=" btn btn-outline-light">
+                        <a role="button">
+                            <ng-lottie [options]="perfil" (click)="openModal(template1)"> </ng-lottie>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="texto1 col-md-3">
-            <div class="animate__animated animate__pulse">
-                {{"name2"|translate}}
+            <div class="texto1 col-md-3">
+                <div class="animate__animated animate__pulse">
+                    {{"name2"|translate}}
+                </div>
             </div>
-        </div>
 
-        <div class="animate__animated animate__pulse col-md-3">
-            <div class="botones">
-                <div class="btn btn-outline-light">
-                    <a role="button">
-                        <ng-lottie [options]="trabajo" (click)="openModal(template4)"> </ng-lottie>
-                    </a>
+            <div class="animate__animated animate__pulse col-md-3">
+                <div class="botones">
+                    <div class="btn btn-outline-light">
+                        <a role="button">
+                            <ng-lottie [options]="trabajo" (click)="openModal(template4)"> </ng-lottie>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="texto1 col-md-3">
-            <div class="animate__animated animate__pulse">{{"experiencia1"|translate}}</div>
-        </div>
+            <div class="texto1 col-md-3">
+                <div class="animate__animated animate__pulse">{{"experiencia1"|translate}}</div>
+            </div>
 
 
-        <div class="animate__animated animate__pulse col-md-3">
-            <div class="botones">
-                <div class="btn btn-outline-light"><a role="button">
-                        <ng-lottie [options]="estudios" (click)="openModal(template2)">
-                        </ng-lottie>
-                    </a>
+            <div class="animate__animated animate__pulse col-md-3">
+                <div class="botones">
+                    <div class="btn btn-outline-light"><a role="button">
+                            <ng-lottie [options]="estudios" (click)="openModal(template2)">
+                            </ng-lottie>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class=" texto1 col-md-3">
-            <div class="animate__animated animate__pulse">
-                {{"estudios2"|translate}}</div>
-        </div>
-        <div class="animate__animated  animate__pulse col-md-3  ">
-            <div class="botones">
-                <div class="btn btn-outline-light">
-                    <a role="button">
-                        <ng-lottie [options]="options" (click)="openModal(template3)"></ng-lottie>
-                    </a>
+            <div class=" texto1 col-md-3">
+                <div class="animate__animated animate__pulse">
+                    {{"estudios2"|translate}}</div>
+            </div>
+            <div class="animate__animated  animate__pulse col-md-3  ">
+                <div class="botones">
+                    <div class="btn btn-outline-light">
+                        <a role="button">
+                            <ng-lottie [options]="options" (click)="openModal(template3)"></ng-lottie>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="texto1 col-md-3">
+                <div class="animate__animated animate__pulse">{{"ubicacion"|translate}}</div>
+            </div>
         </div>
-        <div class="texto1 col-md-3">
-            <div class="animate__animated animate__pulse">{{"ubicacion"|translate}}</div>
-        </div>
-    </div>
     </div>
 </div>
 <ng-template #template1>
@@ -139,25 +139,24 @@
 </ng-template>
 
 <div class="container">
-
     <div class="row">
-        <div class="col-md-6" style="margin-top: 60px;">
+        <div class="col-md-6" style="margin-top: 150px;">
             <div class="text-center card-title2 ">
                 {{"texthoja"|translate}}
             </div>
-            <div class="card-title3 animate__animated animate__pulse  animate__delay-.5s">
+            <div class="card-title3 animate__animated animate__pulse  animate__delay-.5s ">
                 {{"textohoja1"|translate}} </div>
-            <div class="text-center">
-                <a class="tbtn btn-outline-light btn btn-outline-success" style="border-color: #00ffb2;width: 216px;height: 39px;"role="button">
+            <div class="text-center mt-3">
+                <a class="btn btn-outline-light btn btn-outline-success m-2"
+                    style="border-color: #00ffb2;width: 300px; height: 43px;" role="button">
                     <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
             </div>
-            </div>
-            <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
             <div class="lottie">
                 <ng-lottie [options]="servicios" width="100%"></ng-lottie>
-            </div>
-            
-        </div>
 
+            </div>
+        </div>
     </div>
 </div>
