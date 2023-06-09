@@ -71,6 +71,10 @@
   height: 290px;
 }
 
+.m-2 {
+  width: 45%;
+ 
+}
 
 @media (min-width: 768px)and (max-width: 1100px) {
   .container {
@@ -78,6 +82,8 @@
   }
 
 }
+
+
 
 @media (min-width: 880px) and (max-width: 992px) {
   .container {
@@ -92,7 +98,7 @@
 
 
   .card-title {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 800;
   }
 
@@ -119,18 +125,3 @@
 
 }
 
-
-
-
-
-
-
-:host {
- 
-
-  display: flex;
-  
-  align-items: center;
-  
-  
-}
