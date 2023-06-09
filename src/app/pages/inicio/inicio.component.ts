@@ -62,7 +62,7 @@ export class InicioComponent implements OnInit {
     interactivity: {
       detect_on: "canvas",
       events: {
-        onClick: { enable: true, mode: "push" },
+        onClick: { enable: true },
         onHover: {
           enable: true,
           mode: "repulse",
