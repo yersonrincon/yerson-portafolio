@@ -14,6 +14,7 @@ export class PerfilComponent implements OnInit {
   programador: AnimationOptions = {
     path: "assets/foto.json"
 
+
   }
 
   constructor(public translateService: TranslateService) {

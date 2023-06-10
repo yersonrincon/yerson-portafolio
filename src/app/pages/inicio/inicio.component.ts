@@ -105,7 +105,7 @@ export class InicioComponent implements OnInit {
           sync: false
         }
       },
-      number: { density: { enable: true, area: 800 }, value: 4 },
+      number: { density: { enable: true, area: 800 }, value: 5 },
       opacity: {
         animation: { enable: true, minimumValue: 0.5, speed: 1, sync: false },
         random: false,
