@@ -63,31 +63,7 @@ export class EstudiosComponent {
     translateService.use(browserLang.match(/es|en/) ? browserLang : 'en');
   }
   mybreakpoint!: number;
-  iconos : { title:string, src: string}[]=[
-    { title:'ANGULAR',src:'..//..//../assets/iconos/angular.png'},
-  
-    { title:'MYSQL',src:'..//..//../assets/iconos/mysql.png'},
-    { title:'NPM',src:'..//..//../assets/iconos/npm.png'},
-    { title:'ADO.NET',src:'..//..//../assets/iconos/visual.png'},
-    { title:'JAVA ',src:'..//..//../assets/iconos/java.png'},
-    { title:'SCSS',src:'..//..//../assets/iconos/scss.png'},
-    { title:'POSTMAN',src:'..//..//../assets/iconos/postman.png'},
-    { title:'VISUAL CODE',src:'..//..//../assets/iconos/visualcode.png'},
-    { title:'NODE.JS',src:'..//..//../assets/iconos/node.png'},
-    { title:'JS',src:'..//..//../assets/iconos/js.png'},
-    { title:'DBEAVER',src:'..//..//../assets/iconos/dbeaver.png'},
-    { title:'TYPESCRIPT',src:'..//..//../assets/iconos/typescript.png'},
-    { title:'API REST',src:'..//..//../assets/iconos/api.png'},
-    { title:'EXPRESS',src:'..//..//../assets/iconos/express.png'},
-    { title:'GITHAT',src:'..//..//../assets/iconos/git.png'},
-    { title:'BOOTSTRAP',src:'..//..//../assets/iconos/bootstrap.png'},
-    { title:'ADOBE',src:'..//..//../assets/iconos/adobe.png'},
-    { title:'MONGODB',src:'..//..//../assets/iconos/mongo.png'},
-    { title:'HTML',src:'..//..//../assets/iconos/html.png'},
-    { title:'POSGREST',src:'..//..//../assets/iconos/postgres.png'},
-  
-  
-  ]
+ 
 
   
 members: { src:string }[] = [

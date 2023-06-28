@@ -23,16 +23,11 @@ export function playerFactory() {
     MatButtonModule,
     NgxSpinnerModule,
     TranslateModule,
-    MatDialogModule,
-    
+    MatDialogModule, 
     LottieModule.forRoot({ player: playerFactory }),
     AgmCoreModule.forRoot({
-
       apiKey: 'AIzaSyDIYBi1-Q8HAFfH53Z6u3910cvULZh_poU'
     })
- 
-
-   
    
   ],
 

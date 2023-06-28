@@ -12,7 +12,6 @@
     color: #ffffff;
 }
 
-
 .texto {
     width: 50%;
 
@@ -27,7 +26,6 @@
     .lottie {
         width: 450px
     }
-
 }
 
 .h5,
@@ -97,13 +95,12 @@ td[_ngcontent-buj-c52] {
         padding: 2rem;
     }
 
-    
 }
 
 
-@media (max-width: 1100px) and (min-width: 50px){
-.card-title4 {
-    font-size: 15px;
-    text-align: center;
-}
+@media (max-width: 1100px) and (min-width: 50px) {
+    .card-title4 {
+        font-size: 15px;
+        text-align: center;
+    }
 }
