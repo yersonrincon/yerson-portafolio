@@ -12,7 +12,7 @@ import { MatListModule } from '@angular/material/list';
 import { InicioComponent } from './inicio.component';
 import { HeaderModule } from '../../shared/header/header.module';
 import { NgParticlesModule } from "ng-particles";
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
@@ -53,6 +53,6 @@ export function translateHttpLoaderFactory(http: HttpClient) {
 
    
   ],
-  exports:[TranslateModule,HttpClientModule ],
+  exports:[TranslateModule,HttpClientModule,NgxSpinnerModule ],
 })
 export class InicioModule { }

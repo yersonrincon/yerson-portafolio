@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container animate__animated  animate__pulse">
     <div class="card-title2 animate__animated animate__pulse text-center">
         {{"perfil"|translate}}
     </div>
@@ -132,7 +132,7 @@
                 <li *ngFor='let fechas of experiencia.Fecha'><span>{{fechas}}</span> </li>
                 <div> {{experiencia.Date1}} </div>
                 <div> {{experiencia.Date2}} </div>
-                <div> {{experiencia.Date3}} </div>
+               <div> {{experiencia.Date3}} </div>
             </div>
         </div>
     </div>
@@ -147,15 +147,14 @@
             <div class="card-title4 animate__animated animate__pulse  animate__delay-.5s ">
                 {{"textohoja1"|translate}} </div>
             <div class="text-center mt-3">
-                <a class="btn btn-outline-light btn btn-outline-success m-2"
-                    style="border-color: #00ffb2;width:70%;" role="button">
+                <a class="btn btn-outline-light btn btn-outline-success m-2" style="border-color: #00ffb2;width:70%;"
+                    role="button">
                     <button mat-button (click)="downloadPdf()"> {{"button3"|translate}}</button></a>
             </div>
         </div>
         <div class="col-md-6">
             <div class="lottie">
                 <ng-lottie [options]="servicios" width="100%"></ng-lottie>
-
             </div>
         </div>
     </div>

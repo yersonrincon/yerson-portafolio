@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { DescripcionComponent } from './descripcion.component';
 import { DescripcionRoutingModule } from './descripcion-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { LottieModule } from "ngx-lottie";
-import player from "lottie-web";
 import { MatDialogModule } from '@angular/material/dialog';
 import { AgmCoreModule } from '@agm/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import player from "lottie-web";
 // Note we need a separate function as it's required
 // by the AOT compiler.
 export function playerFactory() {

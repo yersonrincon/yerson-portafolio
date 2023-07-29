@@ -11,6 +11,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 
 
 
+
 @NgModule({
   declarations: [SidenavComponent],
   exports: [SidenavComponent],
@@ -22,6 +23,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatMenuModule,
     PerfilRoutingModule,
     MatToolbarModule,
+    
     
   
   ]
