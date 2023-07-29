@@ -26,7 +26,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
-  bootstrap: [AppComponent,]
+  bootstrap: [AppComponent],
+  exports:[NgxSpinnerModule]
 })
 export class AppModule {
 

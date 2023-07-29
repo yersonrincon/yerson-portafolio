@@ -17,8 +17,6 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { NgxSpinnerModule } from 'ngx-spinner';
-
 export function translateHttpLoaderFactory(http: HttpClient) {
 // ruta
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -42,7 +40,6 @@ export function translateHttpLoaderFactory(http: HttpClient) {
     NgParticlesModule,
     FlexLayoutModule, 
     TooltipModule,
-    NgxSpinnerModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -53,6 +50,6 @@ export function translateHttpLoaderFactory(http: HttpClient) {
 
    
   ],
-  exports:[TranslateModule,HttpClientModule,NgxSpinnerModule ],
+  exports:[TranslateModule,HttpClientModule ],
 })
 export class InicioModule { }

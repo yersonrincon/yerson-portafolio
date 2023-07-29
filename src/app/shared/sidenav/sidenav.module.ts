@@ -7,7 +7,7 @@ import { MatListModule  } from '@angular/material/list';
 import { PerfilRoutingModule } from 'src/app/pages/perfil/perfil-routing.module';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatToolbarModule } from "@angular/material/toolbar";
-
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 
 
@@ -23,6 +23,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatMenuModule,
     PerfilRoutingModule,
     MatToolbarModule,
+    NgxSpinnerModule
+    
     
     
   

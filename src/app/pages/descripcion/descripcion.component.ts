@@ -1,7 +1,6 @@
 import { Component, TemplateRef,OnInit } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import * as FileSaver from 'file-saver';
-import { NgxSpinnerService } from 'ngx-spinner';
 import { TranslateService } from '@ngx-translate/core';
 import { AnimationOptions } from "ngx-lottie";
 
