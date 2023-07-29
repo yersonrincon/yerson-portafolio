@@ -20,7 +20,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
 export function translateHttpLoaderFactory(http: HttpClient) {
-
+// ruta
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 
 }
