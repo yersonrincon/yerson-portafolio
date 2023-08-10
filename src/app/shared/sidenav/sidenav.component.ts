@@ -13,9 +13,9 @@ export class SidenavComponent implements OnInit {
     private spinnerService: NgxSpinnerService) { }
 
   ngOnInit(): void {
- 
+  
   }
-  public showSpinner(): void {
+   showSpinner(): void {
     this.spinnerService.show();
 
     setTimeout(() => {
