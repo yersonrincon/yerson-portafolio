@@ -55,5 +55,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ##### Programming languages
 
 
-<p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="javascript" width="65" height="65"/> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="typescript" width="65" height="65"/> </a>
-</p>
+ <p align="left"> 
+ <a href="https://angular.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg" alt="firebase" width="65" height="65"/> </a>
+<a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="postman" width="65" height="65"/> </a>
+<a href="https://www.npmjs.com/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/npm.svg" alt="git" width="65" height="65"/>  </a>
+  </p>
